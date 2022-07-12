@@ -133,8 +133,8 @@ void CGameManager::render() {
 		pPlayer->render();
 		pEffectManager->render();
 
-		CDrawString::getInstance()->drawStringCorner("stage clear", SCREEN_WIDTH * 0.5, 300, 1.0);
-		CDrawString::getInstance()->drawStringCorner("press space", SCREEN_WIDTH * 0.5, 400, 0.5);
+		CDrawString::getInstance()->drawStringCorner("stage clear", int(SCREEN_WIDTH * 0.5), 300, 1.0);
+		CDrawString::getInstance()->drawStringCorner("press space", int(SCREEN_WIDTH * 0.5), 400, 0.5);
 		break;
 	case ePhase::GameOver:
 		pPlayerBulletMananger->render();
@@ -144,8 +144,8 @@ void CGameManager::render() {
 		// pPlayer->render();
 		pEffectManager->render();
 
-		CDrawString::getInstance()->drawStringCorner("game over", SCREEN_WIDTH * 0.5, 300, 1.0);
-		CDrawString::getInstance()->drawStringCorner("press space", SCREEN_WIDTH * 0.5, 400, 0.5);
+		CDrawString::getInstance()->drawStringCorner("game over", int(SCREEN_WIDTH * 0.5), 300, 1.0);
+		CDrawString::getInstance()->drawStringCorner("press space", int(SCREEN_WIDTH * 0.5), 400, 0.5);
 
 		break;
 	default:

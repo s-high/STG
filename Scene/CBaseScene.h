@@ -34,7 +34,7 @@ class CBaseScene
 		}
 
 		void render() {
-			DrawCircleAA(this->x, this->y, this->size, 10, this->color, TRUE);
+			DrawCircleAA(float(this->x), float(this->y), float(this->size), 10, this->color, TRUE);
 		}
 
 		void checkHitWall() {

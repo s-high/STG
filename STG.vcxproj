@@ -72,15 +72,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\俊太郎\source\repos\STG;C:\Users\俊太郎\source\repos\STG\Scene;C:\Users\俊太郎\source\repos\STG\System;C:\Users\俊太郎\source\repos\STG\Game;C:\Users\俊太郎\source\repos\STG\Game\Object;C:\Users\俊太郎\source\repos\STG\Game\Object\Shape;C:\Users\俊太郎\source\repos\STG\Game\Object\PlayerBullet;C:\Users\俊太郎\source\repos\STG\Game\Object\PlayerBullet\Weapon;C:\Users\俊太郎\source\repos\STG\Game\Object\PlayerBullet\Factory;C:\Users\俊太郎\source\repos\STG\Game\Object\Player;C:\Users\俊太郎\source\repos\STG\Game\Object\OutOfScreen;C:\Users\俊太郎\source\repos\STG\Game\Object\HP;C:\Users\俊太郎\source\repos\STG\Game\Object\EnemyBullet;C:\Users\俊太郎\source\repos\STG\Game\Object\EnemyBullet\Weapon;C:\Users\俊太郎\source\repos\STG\Game\Object\EnemyBullet\Shot;C:\Users\俊太郎\source\repos\STG\Game\Object\EnemyBullet\Factory;C:\Users\俊太郎\source\repos\STG\Game\Object\Enemy;C:\Users\俊太郎\source\repos\STG\Game\Object\Enemy\Factory;C:\Users\俊太郎\source\repos\STG\Game\Object\Enemy\Graphic;C:\Users\俊太郎\source\repos\STG\Game\Object\Effect;C:\Users\俊太郎\source\repos\STG\Game\Object\Boss;C:\Users\俊太郎\source\repos\STG\Game\Object\Boss\Behavior;C:\Users\俊太郎\source\repos\STG\Game\Object\Boss\Graphic;C:\Users\俊太郎\source\repos\STG\Game\Object\Move;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\俊太郎\source\repos\STG;C:\Users\俊太郎\source\repos\STG\Scene;C:\Users\俊太郎\source\repos\STG\System;C:\Users\俊太郎\source\repos\STG\Game;C:\Users\俊太郎\source\repos\STG\Game\Object;C:\Users\俊太郎\source\repos\STG\Game\Object\Shape;C:\Users\俊太郎\source\repos\STG\Game\Object\PlayerBullet;C:\Users\俊太郎\source\repos\STG\Game\Object\PlayerBullet\Weapon;C:\Users\俊太郎\source\repos\STG\Game\Object\PlayerBullet\Factory;C:\Users\俊太郎\source\repos\STG\Game\Object\Player;C:\Users\俊太郎\source\repos\STG\Game\Object\OutOfScreen;C:\Users\俊太郎\source\repos\STG\Game\Object\HP;C:\Users\俊太郎\source\repos\STG\Game\Object\EnemyBullet;C:\Users\俊太郎\source\repos\STG\Game\Object\EnemyBullet\Weapon;C:\Users\俊太郎\source\repos\STG\Game\Object\EnemyBullet\Shot;C:\Users\俊太郎\source\repos\STG\Game\Object\EnemyBullet\Factory;C:\Users\俊太郎\source\repos\STG\Game\Object\Enemy;C:\Users\俊太郎\source\repos\STG\Game\Object\Enemy\Factory;C:\Users\俊太郎\source\repos\STG\Game\Object\Enemy\Graphic;C:\Users\俊太郎\source\repos\STG\Game\Object\Effect;C:\Users\俊太郎\source\repos\STG\Game\Object\Boss;C:\Users\俊太郎\source\repos\STG\Game\Object\Boss\Behavior;C:\Users\俊太郎\source\repos\STG\Game\Object\Boss\Graphic;C:\Users\俊太郎\source\repos\STG\Game\Object\Move;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\俊太郎\source\repos\STG;C:\Users\俊太郎\source\repos\STG\Scene;C:\Users\俊太郎\source\repos\STG\System;C:\Users\俊太郎\source\repos\STG\Game;C:\Users\俊太郎\source\repos\STG\Game\Object;C:\Users\俊太郎\source\repos\STG\Game\Object\Shape;C:\Users\俊太郎\source\repos\STG\Game\Object\PlayerBullet;C:\Users\俊太郎\source\repos\STG\Game\Object\PlayerBullet\Weapon;C:\Users\俊太郎\source\repos\STG\Game\Object\PlayerBullet\Factory;C:\Users\俊太郎\source\repos\STG\Game\Object\Player;C:\Users\俊太郎\source\repos\STG\Game\Object\OutOfScreen;C:\Users\俊太郎\source\repos\STG\Game\Object\HP;C:\Users\俊太郎\source\repos\STG\Game\Object\EnemyBullet;C:\Users\俊太郎\source\repos\STG\Game\Object\EnemyBullet\Weapon;C:\Users\俊太郎\source\repos\STG\Game\Object\EnemyBullet\Shot;C:\Users\俊太郎\source\repos\STG\Game\Object\EnemyBullet\Factory;C:\Users\俊太郎\source\repos\STG\Game\Object\Enemy;C:\Users\俊太郎\source\repos\STG\Game\Object\Enemy\Factory;C:\Users\俊太郎\source\repos\STG\Game\Object\Enemy\Graphic;C:\Users\俊太郎\source\repos\STG\Game\Object\Effect;C:\Users\俊太郎\source\repos\STG\Game\Object\Boss;C:\Users\俊太郎\source\repos\STG\Game\Object\Boss\Behavior;C:\Users\俊太郎\source\repos\STG\Game\Object\Boss\Graphic;C:\Users\俊太郎\source\repos\STG\Game\Object\Move;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\俊太郎\source\repos\STG;C:\Users\俊太郎\source\repos\STG\Scene;C:\Users\俊太郎\source\repos\STG\System;C:\Users\俊太郎\source\repos\STG\Game;C:\Users\俊太郎\source\repos\STG\Game\Object;C:\Users\俊太郎\source\repos\STG\Game\Object\Shape;C:\Users\俊太郎\source\repos\STG\Game\Object\PlayerBullet;C:\Users\俊太郎\source\repos\STG\Game\Object\PlayerBullet\Weapon;C:\Users\俊太郎\source\repos\STG\Game\Object\PlayerBullet\Factory;C:\Users\俊太郎\source\repos\STG\Game\Object\Player;C:\Users\俊太郎\source\repos\STG\Game\Object\OutOfScreen;C:\Users\俊太郎\source\repos\STG\Game\Object\HP;C:\Users\俊太郎\source\repos\STG\Game\Object\EnemyBullet;C:\Users\俊太郎\source\repos\STG\Game\Object\EnemyBullet\Weapon;C:\Users\俊太郎\source\repos\STG\Game\Object\EnemyBullet\Shot;C:\Users\俊太郎\source\repos\STG\Game\Object\EnemyBullet\Factory;C:\Users\俊太郎\source\repos\STG\Game\Object\Enemy;C:\Users\俊太郎\source\repos\STG\Game\Object\Enemy\Factory;C:\Users\俊太郎\source\repos\STG\Game\Object\Enemy\Graphic;C:\Users\俊太郎\source\repos\STG\Game\Object\Effect;C:\Users\俊太郎\source\repos\STG\Game\Object\Boss;C:\Users\俊太郎\source\repos\STG\Game\Object\Boss\Behavior;C:\Users\俊太郎\source\repos\STG\Game\Object\Boss\Graphic;C:\Users\俊太郎\source\repos\STG\Game\Object\Move;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -105,6 +109,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\俊太郎\source\repos\STG;C:\Users\俊太郎\source\repos\STG\Game\Object\Move;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -140,6 +145,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\俊太郎\source\repos\STG;C:\Users\俊太郎\source\repos\STG\Game\Object\Move;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -149,154 +155,154 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CAppearanceMove.cpp" />
-    <ClCompile Include="CBaseBoss.cpp" />
-    <ClCompile Include="CBaseBossBehavior.cpp" />
-    <ClCompile Include="CBossGraphic.cpp" />
-    <ClCompile Include="CBaseEffect.cpp" />
-    <ClCompile Include="CBaseEnemy.cpp" />
-    <ClCompile Include="CBaseEnemyBullet.cpp" />
-    <ClCompile Include="CBaseEnemyBulletFactory.cpp" />
-    <ClCompile Include="CBaseEnemyFactory.cpp" />
-    <ClCompile Include="CBossHP.cpp" />
-    <ClCompile Include="CCircle1BossBehavior.cpp" />
-    <ClCompile Include="CCircle2BossBehavior.cpp" />
-    <ClCompile Include="CCircle3BossBehavior.cpp" />
-    <ClCompile Include="CCircle4BossBehavior.cpp" />
-    <ClCompile Include="CCircle5BossBehavior.cpp" />
-    <ClCompile Include="CDisplayBoss.cpp" />
-    <ClCompile Include="CDrawString.cpp" />
-    <ClCompile Include="CEnemyGraphic.cpp" />
-    <ClCompile Include="CBaseEnemyShot.cpp" />
-    <ClCompile Include="CBaseEnemyWeapon.cpp" />
-    <ClCompile Include="CBaseHP.cpp" />
-    <ClCompile Include="CBaseMove.cpp" />
-    <ClCompile Include="CBaseObject.cpp" />
-    <ClCompile Include="CBaseOutOfScreen.cpp" />
-    <ClCompile Include="CBasePlayerBullet.cpp" />
-    <ClCompile Include="CBasePlayerBulletFactory.cpp" />
-    <ClCompile Include="CBasePlayerWeapon.cpp" />
-    <ClCompile Include="CBaseScene.cpp" />
-    <ClCompile Include="CCircle.cpp" />
-    <ClCompile Include="CCircleEnemyShot.cpp" />
-    <ClCompile Include="CCollision.cpp" />
-    <ClCompile Include="CDeleteOutOfScreen.cpp" />
-    <ClCompile Include="CCircleEnemyWeapon.cpp" />
-    <ClCompile Include="CExplodeEnemyBullet.cpp" />
-    <ClCompile Include="CExplodeEnemyBulletFactory.cpp" />
-    <ClCompile Include="CGameManager.cpp" />
-    <ClCompile Include="CGear1BossBehavior.cpp" />
-    <ClCompile Include="CGoToMove.cpp" />
-    <ClCompile Include="CHexagon1BossBehavior.cpp" />
-    <ClCompile Include="CHowToPlayScene.cpp" />
-    <ClCompile Include="CImage.cpp" />
-    <ClCompile Include="CKeyFacade.cpp" />
-    <ClCompile Include="CNormalBoss.cpp" />
-    <ClCompile Include="CNormalEffect.cpp" />
-    <ClCompile Include="CNormalEnemy.cpp" />
-    <ClCompile Include="CNormalEnemyBullet.cpp" />
-    <ClCompile Include="CNormalEnemyBulletFactory.cpp" />
-    <ClCompile Include="CNormalHP.cpp" />
-    <ClCompile Include="CNormalPlayerBullet.cpp" />
-    <ClCompile Include="CNormalPlayerBulletFactory.cpp" />
-    <ClCompile Include="CNWayPlayerWeapon.cpp" />
-    <ClCompile Include="CObjectManager.cpp" />
-    <ClCompile Include="CParameter.cpp" />
-    <ClCompile Include="CPlayer.cpp" />
-    <ClCompile Include="CPlayerMove.cpp" />
-    <ClCompile Include="CPlayScene.cpp" />
-    <ClCompile Include="CRandom.cpp" />
-    <ClCompile Include="CRandomEnemyWeapon.cpp" />
-    <ClCompile Include="CRandomFlyMove.cpp" />
-    <ClCompile Include="CRect.cpp" />
-    <ClCompile Include="CReflectMove.cpp" />
-    <ClCompile Include="CRestrictOutOfScreen.cpp" />
-    <ClCompile Include="CSceneManager.cpp" />
-    <ClCompile Include="CBaseShape.cpp" />
-    <ClCompile Include="CSingleton.cpp" />
-    <ClCompile Include="CSpreadEnemyWeapon.cpp" />
-    <ClCompile Include="CSquare1BossBehavior.cpp" />
-    <ClCompile Include="CStageSelectScene.cpp" />
-    <ClCompile Include="CStraightMove.cpp" />
-    <ClCompile Include="CSceneImage.cpp" />
-    <ClCompile Include="CTitleScene.cpp" />
+    <ClCompile Include="Game\Object\Move\CAppearanceMove.cpp" />
+    <ClCompile Include="Game\Object\Boss\CBaseBoss.cpp" />
+    <ClCompile Include="Game\Object\Boss\Behavior\CBaseBossBehavior.cpp" />
+    <ClCompile Include="Game\Object\Boss\Graphic\CBossGraphic.cpp" />
+    <ClCompile Include="Game\Object\Effect\CBaseEffect.cpp" />
+    <ClCompile Include="Game\Object\Enemy\CBaseEnemy.cpp" />
+    <ClCompile Include="Game\Object\EnemyBullet\CBaseEnemyBullet.cpp" />
+    <ClCompile Include="Game\Object\EnemyBullet\Factory\CBaseEnemyBulletFactory.cpp" />
+    <ClCompile Include="Game\Object\Enemy\Factory\CBaseEnemyFactory.cpp" />
+    <ClCompile Include="Game\Object\HP\CBossHP.cpp" />
+    <ClCompile Include="Game\Object\Boss\Behavior\CCircle1BossBehavior.cpp" />
+    <ClCompile Include="Game\Object\Boss\Behavior\CCircle2BossBehavior.cpp" />
+    <ClCompile Include="Game\Object\Boss\Behavior\CCircle3BossBehavior.cpp" />
+    <ClCompile Include="Game\Object\Boss\Behavior\CCircle4BossBehavior.cpp" />
+    <ClCompile Include="Game\Object\Boss\Behavior\CCircle5BossBehavior.cpp" />
+    <ClCompile Include="Game\Object\Boss\CDisplayBoss.cpp" />
+    <ClCompile Include="System\CDrawString.cpp" />
+    <ClCompile Include="Game\Object\Enemy\Graphic\CEnemyGraphic.cpp" />
+    <ClCompile Include="Game\Object\EnemyBullet\Shot\CBaseEnemyShot.cpp" />
+    <ClCompile Include="Game\Object\EnemyBullet\Weapon\CBaseEnemyWeapon.cpp" />
+    <ClCompile Include="Game\Object\HP\CBaseHP.cpp" />
+    <ClCompile Include="Game\Object\Move\CBaseMove.cpp" />
+    <ClCompile Include="Game\Object\CBaseObject.cpp" />
+    <ClCompile Include="Game\Object\OutOfScreen\CBaseOutOfScreen.cpp" />
+    <ClCompile Include="Game\Object\PlayerBullet\CBasePlayerBullet.cpp" />
+    <ClCompile Include="Game\Object\PlayerBullet\Factory\CBasePlayerBulletFactory.cpp" />
+    <ClCompile Include="Game\Object\PlayerBullet\Weapon\CBasePlayerWeapon.cpp" />
+    <ClCompile Include="Scene\CBaseScene.cpp" />
+    <ClCompile Include="Game\Object\Shape\CCircle.cpp" />
+    <ClCompile Include="Game\Object\EnemyBullet\Shot\CCircleEnemyShot.cpp" />
+    <ClCompile Include="Game\Object\CCollision.cpp" />
+    <ClCompile Include="Game\Object\OutOfScreen\CDeleteOutOfScreen.cpp" />
+    <ClCompile Include="Game\Object\EnemyBullet\Weapon\CCircleEnemyWeapon.cpp" />
+    <ClCompile Include="Game\Object\EnemyBullet\CExplodeEnemyBullet.cpp" />
+    <ClCompile Include="Game\Object\EnemyBullet\Factory\CExplodeEnemyBulletFactory.cpp" />
+    <ClCompile Include="System\CGameManager.cpp" />
+    <ClCompile Include="Game\Object\Boss\Behavior\CGear1BossBehavior.cpp" />
+    <ClCompile Include="Game\Object\Move\CGoToMove.cpp" />
+    <ClCompile Include="Game\Object\Boss\Behavior\CHexagon1BossBehavior.cpp" />
+    <ClCompile Include="Scene\CHowToPlayScene.cpp" />
+    <ClCompile Include="System\CImage.cpp" />
+    <ClCompile Include="System\CKeyFacade.cpp" />
+    <ClCompile Include="Game\Object\Boss\CNormalBoss.cpp" />
+    <ClCompile Include="Game\Object\Effect\CNormalEffect.cpp" />
+    <ClCompile Include="Game\Object\Enemy\CNormalEnemy.cpp" />
+    <ClCompile Include="Game\Object\EnemyBullet\CNormalEnemyBullet.cpp" />
+    <ClCompile Include="Game\Object\EnemyBullet\Factory\CNormalEnemyBulletFactory.cpp" />
+    <ClCompile Include="Game\Object\HP\CNormalHP.cpp" />
+    <ClCompile Include="Game\Object\PlayerBullet\CNormalPlayerBullet.cpp" />
+    <ClCompile Include="Game\Object\PlayerBullet\Factory\CNormalPlayerBulletFactory.cpp" />
+    <ClCompile Include="Game\Object\PlayerBullet\Weapon\CNWayPlayerWeapon.cpp" />
+    <ClCompile Include="Game\Object\CObjectManager.cpp" />
+    <ClCompile Include="System\CParameter.cpp" />
+    <ClCompile Include="Game\Object\Player\CPlayer.cpp" />
+    <ClCompile Include="Game\Object\Move\CPlayerMove.cpp" />
+    <ClCompile Include="Scene\CPlayScene.cpp" />
+    <ClCompile Include="System\CRandom.cpp" />
+    <ClCompile Include="Game\Object\EnemyBullet\Weapon\CRandomEnemyWeapon.cpp" />
+    <ClCompile Include="Game\Object\Move\CRandomFlyMove.cpp" />
+    <ClCompile Include="Game\Object\Shape\CRect.cpp" />
+    <ClCompile Include="Game\Object\Move\CReflectMove.cpp" />
+    <ClCompile Include="Game\Object\OutOfScreen\CRestrictOutOfScreen.cpp" />
+    <ClCompile Include="Scene\CSceneManager.cpp" />
+    <ClCompile Include="Game\Object\Shape\CBaseShape.cpp" />
+    <ClCompile Include="System\CSingleton.cpp" />
+    <ClCompile Include="Game\Object\PlayerBullet\Weapon\CSpreadEnemyWeapon.cpp" />
+    <ClCompile Include="Game\Object\Boss\Behavior\CSquare1BossBehavior.cpp" />
+    <ClCompile Include="Scene\CStageSelectScene.cpp" />
+    <ClCompile Include="Game\Object\Move\CStraightMove.cpp" />
+    <ClCompile Include="System\CSceneImage.cpp" />
+    <ClCompile Include="Scene\CTitleScene.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CAppearanceMove.h" />
-    <ClInclude Include="CBaseBoss.h" />
-    <ClInclude Include="CBaseBossBehavior.h" />
-    <ClInclude Include="CBossGraphic.h" />
-    <ClInclude Include="CBaseEffect.h" />
-    <ClInclude Include="CBaseEnemy.h" />
-    <ClInclude Include="CBaseEnemyBullet.h" />
-    <ClInclude Include="CBaseEnemyBulletFactory.h" />
-    <ClInclude Include="CBaseEnemyFactory.h" />
-    <ClInclude Include="CBossHP.h" />
-    <ClInclude Include="CCircle1BossBehavior.h" />
-    <ClInclude Include="CCircle2BossBehavior.h" />
-    <ClInclude Include="CCircle3BossBehavior.h" />
-    <ClInclude Include="CCircle4BossBehavior.h" />
-    <ClInclude Include="CCircle5BossBehavior.h" />
-    <ClInclude Include="CDisplayBoss.h" />
-    <ClInclude Include="CDrawString.h" />
-    <ClInclude Include="CEnemyGraphic.h" />
-    <ClInclude Include="CBaseEnemyShot.h" />
-    <ClInclude Include="CBaseEnemyWeapon.h" />
-    <ClInclude Include="CBaseHP.h" />
-    <ClInclude Include="CBaseMove.h" />
-    <ClInclude Include="CBaseObject.h" />
-    <ClInclude Include="CBaseOutOfScreen.h" />
-    <ClInclude Include="CBasePlayerBullet.h" />
-    <ClInclude Include="CBasePlayerBulletFactory.h" />
-    <ClInclude Include="CBasePlayerWeapon.h" />
-    <ClInclude Include="CBaseScene.h" />
-    <ClInclude Include="CCircle.h" />
-    <ClInclude Include="CCircleEnemyShot.h" />
-    <ClInclude Include="CCollision.h" />
-    <ClInclude Include="CDeleteOutOfScreen.h" />
-    <ClInclude Include="CCircleEnemyWeapon.h" />
-    <ClInclude Include="CExplodeEnemyBullet.h" />
-    <ClInclude Include="CExplodeEnemyBulletFactory.h" />
-    <ClInclude Include="CGameManager.h" />
-    <ClInclude Include="CGear1BossBehavior.h" />
-    <ClInclude Include="CGoToMove.h" />
-    <ClInclude Include="CHexagon1BossBehavior.h" />
-    <ClInclude Include="CHowToPlayScene.h" />
-    <ClInclude Include="CImage.h" />
-    <ClInclude Include="CKeyFacade.h" />
-    <ClInclude Include="CNormalBoss.h" />
-    <ClInclude Include="CNormalEffect.h" />
-    <ClInclude Include="CNormalEnemy.h" />
-    <ClInclude Include="CNormalEnemyBullet.h" />
-    <ClInclude Include="CNormalEnemyBulletFactory.h" />
-    <ClInclude Include="CNormalHP.h" />
-    <ClInclude Include="CNormalPlayerBullet.h" />
-    <ClInclude Include="CNormalPlayerBulletFactory.h" />
-    <ClInclude Include="CNWayPlayerWeapon.h" />
-    <ClInclude Include="CObjectManager.h" />
-    <ClInclude Include="CParameter.h" />
-    <ClInclude Include="CPlayer.h" />
-    <ClInclude Include="CPlayerMove.h" />
-    <ClInclude Include="CPlayScene.h" />
-    <ClInclude Include="CRandom.h" />
-    <ClInclude Include="CRandomEnemyWeapon.h" />
-    <ClInclude Include="CRandomFlyMove.h" />
-    <ClInclude Include="CRect.h" />
-    <ClInclude Include="CReflectMove.h" />
-    <ClInclude Include="CRestrictOutOfScreen.h" />
-    <ClInclude Include="CSceneManager.h" />
-    <ClInclude Include="CBaseShape.h" />
-    <ClInclude Include="CSingleton.h" />
-    <ClInclude Include="CSpreadEnemyWeapon.h" />
-    <ClInclude Include="CSquare1BossBehavior.h" />
-    <ClInclude Include="CStageSelectScene.h" />
-    <ClInclude Include="CStraightMove.h" />
-    <ClInclude Include="CSceneImage.h" />
-    <ClInclude Include="CTitleScene.h" />
-    <ClInclude Include="eKey.h" />
-    <ClInclude Include="eScene.h" />
-    <ClInclude Include="extern.h" />
+    <ClInclude Include="Game\Object\Move\CAppearanceMove.h" />
+    <ClInclude Include="Game\Object\Boss\CBaseBoss.h" />
+    <ClInclude Include="Game\Object\Boss\Behavior\CBaseBossBehavior.h" />
+    <ClInclude Include="Game\Object\Boss\Graphic\CBossGraphic.h" />
+    <ClInclude Include="Game\Object\Effect\CBaseEffect.h" />
+    <ClInclude Include="Game\Object\Enemy\CBaseEnemy.h" />
+    <ClInclude Include="Game\Object\EnemyBullet\CBaseEnemyBullet.h" />
+    <ClInclude Include="Game\Object\EnemyBullet\Factory\CBaseEnemyBulletFactory.h" />
+    <ClInclude Include="Game\Object\Enemy\Factory\CBaseEnemyFactory.h" />
+    <ClInclude Include="Game\Object\HP\CBossHP.h" />
+    <ClInclude Include="Game\Object\Boss\Behavior\CCircle1BossBehavior.h" />
+    <ClInclude Include="Game\Object\Boss\Behavior\CCircle2BossBehavior.h" />
+    <ClInclude Include="Game\Object\Boss\Behavior\CCircle3BossBehavior.h" />
+    <ClInclude Include="Game\Object\Boss\Behavior\CCircle4BossBehavior.h" />
+    <ClInclude Include="Game\Object\Boss\Behavior\CCircle5BossBehavior.h" />
+    <ClInclude Include="Game\Object\Boss\CDisplayBoss.h" />
+    <ClInclude Include="System\CDrawString.h" />
+    <ClInclude Include="Game\Object\Enemy\Graphic\CEnemyGraphic.h" />
+    <ClInclude Include="Game\Object\EnemyBullet\Shot\CBaseEnemyShot.h" />
+    <ClInclude Include="Game\Object\EnemyBullet\Weapon\CBaseEnemyWeapon.h" />
+    <ClInclude Include="Game\Object\HP\CBaseHP.h" />
+    <ClInclude Include="Game\Object\Move\CBaseMove.h" />
+    <ClInclude Include="Game\Object\CBaseObject.h" />
+    <ClInclude Include="Game\Object\OutOfScreen\CBaseOutOfScreen.h" />
+    <ClInclude Include="Game\Object\PlayerBullet\CBasePlayerBullet.h" />
+    <ClInclude Include="Game\Object\PlayerBullet\Factory\CBasePlayerBulletFactory.h" />
+    <ClInclude Include="Game\Object\PlayerBullet\Weapon\CBasePlayerWeapon.h" />
+    <ClInclude Include="Scene\CBaseScene.h" />
+    <ClInclude Include="Game\Object\Shape\CCircle.h" />
+    <ClInclude Include="Game\Object\EnemyBullet\Shot\CCircleEnemyShot.h" />
+    <ClInclude Include="Game\Object\CCollision.h" />
+    <ClInclude Include="Game\Object\OutOfScreen\CDeleteOutOfScreen.h" />
+    <ClInclude Include="Game\Object\EnemyBullet\Weapon\CCircleEnemyWeapon.h" />
+    <ClInclude Include="Game\Object\EnemyBullet\CExplodeEnemyBullet.h" />
+    <ClInclude Include="Game\Object\EnemyBullet\Factory\CExplodeEnemyBulletFactory.h" />
+    <ClInclude Include="System\CGameManager.h" />
+    <ClInclude Include="Game\Object\Boss\Behavior\CGear1BossBehavior.h" />
+    <ClInclude Include="Game\Object\Move\CGoToMove.h" />
+    <ClInclude Include="Game\Object\Boss\Behavior\CHexagon1BossBehavior.h" />
+    <ClInclude Include="Scene\CHowToPlayScene.h" />
+    <ClInclude Include="System\CImage.h" />
+    <ClInclude Include="System\CKeyFacade.h" />
+    <ClInclude Include="Game\Object\Boss\CNormalBoss.h" />
+    <ClInclude Include="Game\Object\Effect\CNormalEffect.h" />
+    <ClInclude Include="Game\Object\Enemy\CNormalEnemy.h" />
+    <ClInclude Include="Game\Object\EnemyBullet\CNormalEnemyBullet.h" />
+    <ClInclude Include="Game\Object\EnemyBullet\Factory\CNormalEnemyBulletFactory.h" />
+    <ClInclude Include="Game\Object\HP\CNormalHP.h" />
+    <ClInclude Include="Game\Object\PlayerBullet\CNormalPlayerBullet.h" />
+    <ClInclude Include="Game\Object\PlayerBullet\Factory\CNormalPlayerBulletFactory.h" />
+    <ClInclude Include="Game\Object\PlayerBullet\Weapon\CNWayPlayerWeapon.h" />
+    <ClInclude Include="Game\Object\CObjectManager.h" />
+    <ClInclude Include="System\CParameter.h" />
+    <ClInclude Include="Game\Object\Player\CPlayer.h" />
+    <ClInclude Include="Game\Object\Move\CPlayerMove.h" />
+    <ClInclude Include="Scene\CPlayScene.h" />
+    <ClInclude Include="System\CRandom.h" />
+    <ClInclude Include="Game\Object\EnemyBullet\Weapon\CRandomEnemyWeapon.h" />
+    <ClInclude Include="Game\Object\Move\CRandomFlyMove.h" />
+    <ClInclude Include="Game\Object\Shape\CRect.h" />
+    <ClInclude Include="Game\Object\Move\CReflectMove.h" />
+    <ClInclude Include="Game\Object\OutOfScreen\CRestrictOutOfScreen.h" />
+    <ClInclude Include="Scene\CSceneManager.h" />
+    <ClInclude Include="Game\Object\Shape\CBaseShape.h" />
+    <ClInclude Include="System\CSingleton.h" />
+    <ClInclude Include="Game\Object\PlayerBullet\Weapon\CSpreadEnemyWeapon.h" />
+    <ClInclude Include="Game\Object\Boss\Behavior\CSquare1BossBehavior.h" />
+    <ClInclude Include="Scene\CStageSelectScene.h" />
+    <ClInclude Include="Game\Object\Move\CStraightMove.h" />
+    <ClInclude Include="System\CSceneImage.h" />
+    <ClInclude Include="Scene\CTitleScene.h" />
+    <ClInclude Include="System\eKey.h" />
+    <ClInclude Include="Scene\eScene.h" />
+    <ClInclude Include="System\extern.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc" />

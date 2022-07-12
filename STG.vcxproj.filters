@@ -138,442 +138,442 @@
     <ClCompile Include="main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="CBaseScene.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="CPlayScene.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="CSceneManager.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="CImage.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="CKeyFacade.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="CParameter.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="CSingleton.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="CTitleScene.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="CBaseObject.cpp">
-      <Filter>ソース ファイル\Object</Filter>
-    </ClCompile>
-    <ClCompile Include="CBaseMove.cpp">
+    <ClCompile Include="Game\Object\Move\CAppearanceMove.cpp">
       <Filter>ソース ファイル\Object\Move</Filter>
     </ClCompile>
-    <ClCompile Include="CPlayerMove.cpp">
-      <Filter>ソース ファイル\Object\Move</Filter>
+    <ClCompile Include="Game\Object\Boss\CBaseBoss.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss</Filter>
     </ClCompile>
-    <ClCompile Include="CBasePlayerBullet.cpp">
-      <Filter>ソース ファイル\Object\PlayerBullet</Filter>
+    <ClCompile Include="Game\Object\Boss\Behavior\CBaseBossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
     </ClCompile>
-    <ClCompile Include="CNormalPlayerBullet.cpp">
-      <Filter>ソース ファイル\Object\PlayerBullet</Filter>
-    </ClCompile>
-    <ClCompile Include="CBasePlayerBulletFactory.cpp">
-      <Filter>ソース ファイル\Object\PlayerBullet\Factory</Filter>
-    </ClCompile>
-    <ClCompile Include="CNormalPlayerBulletFactory.cpp">
-      <Filter>ソース ファイル\Object\PlayerBullet\Factory</Filter>
-    </ClCompile>
-    <ClCompile Include="CStraightMove.cpp">
-      <Filter>ソース ファイル\Object\Move</Filter>
-    </ClCompile>
-    <ClCompile Include="CObjectManager.cpp">
-      <Filter>ソース ファイル\Object</Filter>
-    </ClCompile>
-    <ClCompile Include="CPlayer.cpp">
-      <Filter>ソース ファイル\Object\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="CBasePlayerWeapon.cpp">
-      <Filter>ソース ファイル\Object\Player\Weapon</Filter>
-    </ClCompile>
-    <ClCompile Include="CNWayPlayerWeapon.cpp">
-      <Filter>ソース ファイル\Object\Player\Weapon</Filter>
-    </ClCompile>
-    <ClCompile Include="CBaseOutOfScreen.cpp">
-      <Filter>ソース ファイル\Object\OutOfScreen</Filter>
-    </ClCompile>
-    <ClCompile Include="CDeleteOutOfScreen.cpp">
-      <Filter>ソース ファイル\Object\OutOfScreen</Filter>
-    </ClCompile>
-    <ClCompile Include="CRestrictOutOfScreen.cpp">
-      <Filter>ソース ファイル\Object\OutOfScreen</Filter>
-    </ClCompile>
-    <ClCompile Include="CRandomFlyMove.cpp">
-      <Filter>ソース ファイル\Object\Move</Filter>
-    </ClCompile>
-    <ClCompile Include="CBaseEnemyBullet.cpp">
-      <Filter>ソース ファイル\Object\EnemyBullet</Filter>
-    </ClCompile>
-    <ClCompile Include="CNormalEnemyBullet.cpp">
-      <Filter>ソース ファイル\Object\EnemyBullet</Filter>
-    </ClCompile>
-    <ClCompile Include="CBaseEnemyBulletFactory.cpp">
-      <Filter>ソース ファイル\Object\EnemyBullet\Factory</Filter>
-    </ClCompile>
-    <ClCompile Include="CBaseEnemyShot.cpp">
-      <Filter>ソース ファイル\Object\EnemyBullet\Shot</Filter>
-    </ClCompile>
-    <ClCompile Include="CBaseEnemyWeapon.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Weapon</Filter>
-    </ClCompile>
-    <ClCompile Include="CCircleEnemyShot.cpp">
-      <Filter>ソース ファイル\Object\EnemyBullet\Shot</Filter>
-    </ClCompile>
-    <ClCompile Include="CNormalEnemyBulletFactory.cpp">
-      <Filter>ソース ファイル\Object\EnemyBullet\Factory</Filter>
-    </ClCompile>
-    <ClCompile Include="CCircleEnemyWeapon.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Weapon</Filter>
-    </ClCompile>
-    <ClCompile Include="CRandom.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="CRandomEnemyWeapon.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Weapon</Filter>
-    </ClCompile>
-    <ClCompile Include="CSpreadEnemyWeapon.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Weapon</Filter>
-    </ClCompile>
-    <ClCompile Include="CBaseEffect.cpp">
+    <ClCompile Include="Game\Object\Effect\CBaseEffect.cpp">
       <Filter>ソース ファイル\Object\Effect</Filter>
     </ClCompile>
-    <ClCompile Include="CBaseEnemy.cpp">
+    <ClCompile Include="Game\Object\Enemy\CBaseEnemy.cpp">
       <Filter>ソース ファイル\Object\Enemy\Small</Filter>
     </ClCompile>
-    <ClCompile Include="CCollision.cpp">
-      <Filter>ソース ファイル\Object</Filter>
+    <ClCompile Include="Game\Object\EnemyBullet\CBaseEnemyBullet.cpp">
+      <Filter>ソース ファイル\Object\EnemyBullet</Filter>
     </ClCompile>
-    <ClCompile Include="CBaseShape.cpp">
-      <Filter>ソース ファイル\Object\Shape</Filter>
+    <ClCompile Include="Game\Object\EnemyBullet\Factory\CBaseEnemyBulletFactory.cpp">
+      <Filter>ソース ファイル\Object\EnemyBullet\Factory</Filter>
     </ClCompile>
-    <ClCompile Include="CCircle.cpp">
-      <Filter>ソース ファイル\Object\Shape</Filter>
-    </ClCompile>
-    <ClCompile Include="CRect.cpp">
-      <Filter>ソース ファイル\Object\Shape</Filter>
-    </ClCompile>
-    <ClCompile Include="CBaseHP.cpp">
-      <Filter>ソース ファイル\Object\Enemy</Filter>
-    </ClCompile>
-    <ClCompile Include="CNormalHP.cpp">
-      <Filter>ソース ファイル\Object\Enemy</Filter>
-    </ClCompile>
-    <ClCompile Include="CNormalEffect.cpp">
-      <Filter>ソース ファイル\Object\Effect</Filter>
-    </ClCompile>
-    <ClCompile Include="CGameManager.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="CBaseEnemyFactory.cpp">
+    <ClCompile Include="Game\Object\Enemy\Factory\CBaseEnemyFactory.cpp">
       <Filter>ソース ファイル\Object\Enemy\Small\Factory</Filter>
     </ClCompile>
-    <ClCompile Include="CEnemyGraphic.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Small</Filter>
+    <ClCompile Include="Game\Object\EnemyBullet\Weapon\CBaseEnemyWeapon.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Weapon</Filter>
     </ClCompile>
-    <ClCompile Include="CBossGraphic.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Boss</Filter>
+    <ClCompile Include="Game\Object\EnemyBullet\Shot\CBaseEnemyShot.cpp">
+      <Filter>ソース ファイル\Object\EnemyBullet\Shot</Filter>
     </ClCompile>
-    <ClCompile Include="CNormalEnemy.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Small</Filter>
-    </ClCompile>
-    <ClCompile Include="CGoToMove.cpp">
+    <ClCompile Include="Game\Object\Move\CBaseMove.cpp">
       <Filter>ソース ファイル\Object\Move</Filter>
     </ClCompile>
-    <ClCompile Include="CDrawString.cpp">
+    <ClCompile Include="Game\Object\OutOfScreen\CBaseOutOfScreen.cpp">
+      <Filter>ソース ファイル\Object\OutOfScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\PlayerBullet\CBasePlayerBullet.cpp">
+      <Filter>ソース ファイル\Object\PlayerBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\PlayerBullet\Factory\CBasePlayerBulletFactory.cpp">
+      <Filter>ソース ファイル\Object\PlayerBullet\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\PlayerBullet\Weapon\CBasePlayerWeapon.cpp">
+      <Filter>ソース ファイル\Object\Player\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\CBaseObject.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CBaseScene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Shape\CBaseShape.cpp">
+      <Filter>ソース ファイル\Object\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Boss\Graphic\CBossGraphic.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Boss\Behavior\CCircle1BossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Boss\Behavior\CCircle2BossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Boss\Behavior\CCircle3BossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Boss\Behavior\CCircle4BossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Boss\Behavior\CCircle5BossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\EnemyBullet\Shot\CCircleEnemyShot.cpp">
+      <Filter>ソース ファイル\Object\EnemyBullet\Shot</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Shape\CCircle.cpp">
+      <Filter>ソース ファイル\Object\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\EnemyBullet\Weapon\CCircleEnemyWeapon.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\CCollision.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="System\CDrawString.cpp">
       <Filter>ソース ファイル\System</Filter>
     </ClCompile>
-    <ClCompile Include="CReflectMove.cpp">
-      <Filter>ソース ファイル\Object\Move</Filter>
-    </ClCompile>
-    <ClCompile Include="CBaseBoss.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Boss</Filter>
-    </ClCompile>
-    <ClCompile Include="CAppearanceMove.cpp">
-      <Filter>ソース ファイル\Object\Move</Filter>
-    </ClCompile>
-    <ClCompile Include="CNormalBoss.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Boss</Filter>
-    </ClCompile>
-    <ClCompile Include="CSceneImage.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="CBossHP.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Boss</Filter>
-    </ClCompile>
-    <ClCompile Include="CDisplayBoss.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Boss</Filter>
-    </ClCompile>
-    <ClCompile Include="CExplodeEnemyBullet.cpp">
+    <ClCompile Include="Game\Object\EnemyBullet\CExplodeEnemyBullet.cpp">
       <Filter>ソース ファイル\Object\EnemyBullet</Filter>
     </ClCompile>
-    <ClCompile Include="CExplodeEnemyBulletFactory.cpp">
+    <ClCompile Include="Game\Object\EnemyBullet\Factory\CExplodeEnemyBulletFactory.cpp">
       <Filter>ソース ファイル\Object\EnemyBullet\Factory</Filter>
     </ClCompile>
-    <ClCompile Include="CHowToPlayScene.cpp">
+    <ClCompile Include="Game\Object\OutOfScreen\CDeleteOutOfScreen.cpp">
+      <Filter>ソース ファイル\Object\OutOfScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="System\CGameManager.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\CImage.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\CKeyFacade.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Move\CGoToMove.cpp">
+      <Filter>ソース ファイル\Object\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Boss\Behavior\CGear1BossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Boss\Behavior\CHexagon1BossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Enemy\Graphic\CEnemyGraphic.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Small</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CHowToPlayScene.cpp">
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="CStageSelectScene.cpp">
+    <ClCompile Include="Game\Object\Effect\CNormalEffect.cpp">
+      <Filter>ソース ファイル\Object\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\EnemyBullet\CNormalEnemyBullet.cpp">
+      <Filter>ソース ファイル\Object\EnemyBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Boss\CNormalBoss.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Enemy\CNormalEnemy.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Small</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\EnemyBullet\Factory\CNormalEnemyBulletFactory.cpp">
+      <Filter>ソース ファイル\Object\EnemyBullet\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\PlayerBullet\CNormalPlayerBullet.cpp">
+      <Filter>ソース ファイル\Object\PlayerBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\PlayerBullet\Factory\CNormalPlayerBulletFactory.cpp">
+      <Filter>ソース ファイル\Object\PlayerBullet\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\PlayerBullet\Weapon\CNWayPlayerWeapon.cpp">
+      <Filter>ソース ファイル\Object\Player\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Player\CPlayer.cpp">
+      <Filter>ソース ファイル\Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Move\CPlayerMove.cpp">
+      <Filter>ソース ファイル\Object\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="System\CParameter.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\CRandom.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Boss\CDisplayBoss.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\CObjectManager.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\EnemyBullet\Weapon\CRandomEnemyWeapon.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CPlayScene.cpp">
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="CCircle1BossBehavior.cpp">
+    <ClCompile Include="Game\Object\Move\CRandomFlyMove.cpp">
+      <Filter>ソース ファイル\Object\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CTitleScene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Move\CStraightMove.cpp">
+      <Filter>ソース ファイル\Object\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Shape\CRect.cpp">
+      <Filter>ソース ファイル\Object\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\OutOfScreen\CRestrictOutOfScreen.cpp">
+      <Filter>ソース ファイル\Object\OutOfScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Move\CReflectMove.cpp">
+      <Filter>ソース ファイル\Object\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="System\CSceneImage.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\CSingleton.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CSceneManager.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CStageSelectScene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Object\Boss\Behavior\CSquare1BossBehavior.cpp">
       <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
     </ClCompile>
-    <ClCompile Include="CCircle2BossBehavior.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    <ClCompile Include="Game\Object\PlayerBullet\Weapon\CSpreadEnemyWeapon.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Weapon</Filter>
     </ClCompile>
-    <ClCompile Include="CCircle3BossBehavior.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    <ClCompile Include="Game\Object\HP\CBaseHP.cpp">
+      <Filter>ソース ファイル\Object\Enemy</Filter>
     </ClCompile>
-    <ClCompile Include="CCircle4BossBehavior.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    <ClCompile Include="Game\Object\HP\CBossHP.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss</Filter>
     </ClCompile>
-    <ClCompile Include="CCircle5BossBehavior.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
-    </ClCompile>
-    <ClCompile Include="CGear1BossBehavior.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
-    </ClCompile>
-    <ClCompile Include="CHexagon1BossBehavior.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
-    </ClCompile>
-    <ClCompile Include="CSquare1BossBehavior.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
-    </ClCompile>
-    <ClCompile Include="CBaseBossBehavior.cpp">
-      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    <ClCompile Include="Game\Object\HP\CNormalHP.cpp">
+      <Filter>ソース ファイル\Object\Enemy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CBaseScene.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="CPlayScene.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="CSceneManager.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="CImage.h">
-      <Filter>ヘッダー ファイル\System</Filter>
-    </ClInclude>
-    <ClInclude Include="CKeyFacade.h">
-      <Filter>ヘッダー ファイル\System</Filter>
-    </ClInclude>
-    <ClInclude Include="CParameter.h">
-      <Filter>ヘッダー ファイル\System</Filter>
-    </ClInclude>
-    <ClInclude Include="CSingleton.h">
-      <Filter>ヘッダー ファイル\System</Filter>
-    </ClInclude>
-    <ClInclude Include="eScene.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="eKey.h">
-      <Filter>ヘッダー ファイル\System</Filter>
-    </ClInclude>
-    <ClInclude Include="CTitleScene.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="CBaseObject.h">
-      <Filter>ヘッダー ファイル\Object</Filter>
-    </ClInclude>
-    <ClInclude Include="extern.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="CBaseMove.h">
+    <ClInclude Include="Game\Object\Move\CAppearanceMove.h">
       <Filter>ヘッダー ファイル\Object\Move</Filter>
     </ClInclude>
-    <ClInclude Include="CPlayerMove.h">
-      <Filter>ヘッダー ファイル\Object\Move</Filter>
+    <ClInclude Include="Game\Object\Boss\CBaseBoss.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss</Filter>
     </ClInclude>
-    <ClInclude Include="CBasePlayerBullet.h">
-      <Filter>ヘッダー ファイル\Object\PlayerBullet</Filter>
+    <ClInclude Include="Game\Object\Boss\Behavior\CBaseBossBehavior.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
     </ClInclude>
-    <ClInclude Include="CNormalPlayerBullet.h">
-      <Filter>ヘッダー ファイル\Object\PlayerBullet</Filter>
-    </ClInclude>
-    <ClInclude Include="CStraightMove.h">
-      <Filter>ヘッダー ファイル\Object\Move</Filter>
-    </ClInclude>
-    <ClInclude Include="CObjectManager.h">
-      <Filter>ヘッダー ファイル\Object</Filter>
-    </ClInclude>
-    <ClInclude Include="CBasePlayerBulletFactory.h">
-      <Filter>ヘッダー ファイル\Object\PlayerBullet\Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="CNormalPlayerBulletFactory.h">
-      <Filter>ヘッダー ファイル\Object\PlayerBullet\Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="CPlayer.h">
-      <Filter>ヘッダー ファイル\Object\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="CBasePlayerWeapon.h">
-      <Filter>ヘッダー ファイル\Object\Player\Weapon</Filter>
-    </ClInclude>
-    <ClInclude Include="CNWayPlayerWeapon.h">
-      <Filter>ヘッダー ファイル\Object\Player\Weapon</Filter>
-    </ClInclude>
-    <ClInclude Include="CBaseOutOfScreen.h">
-      <Filter>ヘッダー ファイル\Object\OutOfScreen</Filter>
-    </ClInclude>
-    <ClInclude Include="CDeleteOutOfScreen.h">
-      <Filter>ヘッダー ファイル\Object\OutOfScreen</Filter>
-    </ClInclude>
-    <ClInclude Include="CRestrictOutOfScreen.h">
-      <Filter>ヘッダー ファイル\Object\OutOfScreen</Filter>
-    </ClInclude>
-    <ClInclude Include="CBaseEnemyBullet.h">
-      <Filter>ヘッダー ファイル\Object\EnemyBullet</Filter>
-    </ClInclude>
-    <ClInclude Include="CBaseEnemyBulletFactory.h">
-      <Filter>ヘッダー ファイル\Object\EnemyBullet\Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="CNormalEnemyBulletFactory.h">
-      <Filter>ヘッダー ファイル\Object\EnemyBullet\Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="CCircleEnemyWeapon.h">
-      <Filter>ヘッダー ファイル\Object\Enemy\Weapon</Filter>
-    </ClInclude>
-    <ClInclude Include="CBaseEnemyWeapon.h">
-      <Filter>ヘッダー ファイル\Object\Enemy\Weapon</Filter>
-    </ClInclude>
-    <ClInclude Include="CCircleEnemyShot.h">
-      <Filter>ヘッダー ファイル\Object\EnemyBullet\Shot</Filter>
-    </ClInclude>
-    <ClInclude Include="CBaseEnemyShot.h">
-      <Filter>ヘッダー ファイル\Object\EnemyBullet\Shot</Filter>
-    </ClInclude>
-    <ClInclude Include="CRandomFlyMove.h">
-      <Filter>ヘッダー ファイル\Object\Move</Filter>
-    </ClInclude>
-    <ClInclude Include="CNormalEnemyBullet.h">
-      <Filter>ヘッダー ファイル\Object\EnemyBullet</Filter>
-    </ClInclude>
-    <ClInclude Include="CRandom.h">
-      <Filter>ヘッダー ファイル\System</Filter>
-    </ClInclude>
-    <ClInclude Include="CRandomEnemyWeapon.h">
-      <Filter>ヘッダー ファイル\Object\Enemy\Weapon</Filter>
-    </ClInclude>
-    <ClInclude Include="CSpreadEnemyWeapon.h">
-      <Filter>ヘッダー ファイル\Object\Enemy\Weapon</Filter>
-    </ClInclude>
-    <ClInclude Include="CBaseEnemy.h">
-      <Filter>ヘッダー ファイル\Object\Enemy\Small</Filter>
-    </ClInclude>
-    <ClInclude Include="CNormalEnemy.h">
-      <Filter>ヘッダー ファイル\Object\Enemy\Small</Filter>
-    </ClInclude>
-    <ClInclude Include="CCircle.h">
-      <Filter>ヘッダー ファイル\Object\Shape</Filter>
-    </ClInclude>
-    <ClInclude Include="CRect.h">
-      <Filter>ヘッダー ファイル\Object\Shape</Filter>
-    </ClInclude>
-    <ClInclude Include="CBaseShape.h">
-      <Filter>ヘッダー ファイル\Object\Shape</Filter>
-    </ClInclude>
-    <ClInclude Include="CBaseEffect.h">
+    <ClInclude Include="Game\Object\Effect\CBaseEffect.h">
       <Filter>ヘッダー ファイル\Object\Effect</Filter>
     </ClInclude>
-    <ClInclude Include="CNormalEffect.h">
-      <Filter>ヘッダー ファイル\Object\Effect</Filter>
+    <ClInclude Include="Game\Object\Enemy\CBaseEnemy.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Small</Filter>
     </ClInclude>
-    <ClInclude Include="CCollision.h">
-      <Filter>ヘッダー ファイル\Object</Filter>
+    <ClInclude Include="Game\Object\EnemyBullet\CBaseEnemyBullet.h">
+      <Filter>ヘッダー ファイル\Object\EnemyBullet</Filter>
     </ClInclude>
-    <ClInclude Include="CBaseHP.h">
-      <Filter>ヘッダー ファイル\Object\Enemy</Filter>
+    <ClInclude Include="Game\Object\EnemyBullet\Factory\CBaseEnemyBulletFactory.h">
+      <Filter>ヘッダー ファイル\Object\EnemyBullet\Factory</Filter>
     </ClInclude>
-    <ClInclude Include="CNormalHP.h">
-      <Filter>ヘッダー ファイル\Object\Enemy</Filter>
-    </ClInclude>
-    <ClInclude Include="CBaseEnemyFactory.h">
+    <ClInclude Include="Game\Object\Enemy\Factory\CBaseEnemyFactory.h">
       <Filter>ヘッダー ファイル\Object\Enemy\Small\Factory</Filter>
     </ClInclude>
-    <ClInclude Include="CEnemyGraphic.h">
-      <Filter>ヘッダー ファイル\Object\Enemy\Small</Filter>
+    <ClInclude Include="Game\Object\EnemyBullet\Weapon\CBaseEnemyWeapon.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Weapon</Filter>
     </ClInclude>
-    <ClInclude Include="CBossGraphic.h">
+    <ClInclude Include="Game\Object\EnemyBullet\Shot\CBaseEnemyShot.h">
+      <Filter>ヘッダー ファイル\Object\EnemyBullet\Shot</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Move\CBaseMove.h">
+      <Filter>ヘッダー ファイル\Object\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\OutOfScreen\CBaseOutOfScreen.h">
+      <Filter>ヘッダー ファイル\Object\OutOfScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\PlayerBullet\CBasePlayerBullet.h">
+      <Filter>ヘッダー ファイル\Object\PlayerBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\PlayerBullet\Factory\CBasePlayerBulletFactory.h">
+      <Filter>ヘッダー ファイル\Object\PlayerBullet\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\PlayerBullet\Weapon\CBasePlayerWeapon.h">
+      <Filter>ヘッダー ファイル\Object\Player\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\CBaseObject.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CBaseScene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Shape\CBaseShape.h">
+      <Filter>ヘッダー ファイル\Object\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Boss\Graphic\CBossGraphic.h">
       <Filter>ヘッダー ファイル\Object\Enemy\Boss</Filter>
     </ClInclude>
-    <ClInclude Include="CGoToMove.h">
-      <Filter>ヘッダー ファイル\Object\Move</Filter>
-    </ClInclude>
-    <ClInclude Include="CCircle1BossBehavior.h">
+    <ClInclude Include="Game\Object\Boss\Behavior\CCircle5BossBehavior.h">
       <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
     </ClInclude>
-    <ClInclude Include="CCircle2BossBehavior.h">
+    <ClInclude Include="Game\Object\Boss\Behavior\CCircle1BossBehavior.h">
       <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
     </ClInclude>
-    <ClInclude Include="CCircle3BossBehavior.h">
+    <ClInclude Include="Game\Object\Boss\Behavior\CCircle2BossBehavior.h">
       <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
     </ClInclude>
-    <ClInclude Include="CCircle4BossBehavior.h">
+    <ClInclude Include="Game\Object\Boss\Behavior\CCircle3BossBehavior.h">
       <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
     </ClInclude>
-    <ClInclude Include="CCircle5BossBehavior.h">
+    <ClInclude Include="Game\Object\Boss\Behavior\CCircle4BossBehavior.h">
       <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
     </ClInclude>
-    <ClInclude Include="CBaseBossBehavior.h">
-      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
+    <ClInclude Include="Game\Object\EnemyBullet\Shot\CCircleEnemyShot.h">
+      <Filter>ヘッダー ファイル\Object\EnemyBullet\Shot</Filter>
     </ClInclude>
-    <ClInclude Include="CHexagon1BossBehavior.h">
-      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
+    <ClInclude Include="Game\Object\Shape\CCircle.h">
+      <Filter>ヘッダー ファイル\Object\Shape</Filter>
     </ClInclude>
-    <ClInclude Include="CSquare1BossBehavior.h">
-      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
+    <ClInclude Include="Game\Object\EnemyBullet\Weapon\CCircleEnemyWeapon.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Weapon</Filter>
     </ClInclude>
-    <ClInclude Include="CDrawString.h">
+    <ClInclude Include="Game\Object\CCollision.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="System\CDrawString.h">
       <Filter>ヘッダー ファイル\System</Filter>
     </ClInclude>
-    <ClInclude Include="CAppearanceMove.h">
-      <Filter>ヘッダー ファイル\Object\Move</Filter>
-    </ClInclude>
-    <ClInclude Include="CExplodeEnemyBulletFactory.h">
-      <Filter>ヘッダー ファイル\Object\EnemyBullet\Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="CExplodeEnemyBullet.h">
+    <ClInclude Include="Game\Object\EnemyBullet\CExplodeEnemyBullet.h">
       <Filter>ヘッダー ファイル\Object\EnemyBullet</Filter>
     </ClInclude>
-    <ClInclude Include="CGear1BossBehavior.h">
-      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
+    <ClInclude Include="Game\Object\EnemyBullet\Factory\CExplodeEnemyBulletFactory.h">
+      <Filter>ヘッダー ファイル\Object\EnemyBullet\Factory</Filter>
     </ClInclude>
-    <ClInclude Include="CSceneImage.h">
+    <ClInclude Include="Game\Object\OutOfScreen\CDeleteOutOfScreen.h">
+      <Filter>ヘッダー ファイル\Object\OutOfScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="System\CGameManager.h">
       <Filter>ヘッダー ファイル\System</Filter>
     </ClInclude>
-    <ClInclude Include="CStageSelectScene.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
+    <ClInclude Include="System\CImage.h">
+      <Filter>ヘッダー ファイル\System</Filter>
     </ClInclude>
-    <ClInclude Include="CReflectMove.h">
+    <ClInclude Include="System\CKeyFacade.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Move\CGoToMove.h">
       <Filter>ヘッダー ファイル\Object\Move</Filter>
     </ClInclude>
-    <ClInclude Include="CGameManager.h">
+    <ClInclude Include="Game\Object\Boss\Behavior\CGear1BossBehavior.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Boss\Behavior\CHexagon1BossBehavior.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Enemy\Graphic\CEnemyGraphic.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Small</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CHowToPlayScene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Effect\CNormalEffect.h">
+      <Filter>ヘッダー ファイル\Object\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\EnemyBullet\CNormalEnemyBullet.h">
+      <Filter>ヘッダー ファイル\Object\EnemyBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Boss\CNormalBoss.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Enemy\CNormalEnemy.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Small</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\EnemyBullet\Factory\CNormalEnemyBulletFactory.h">
+      <Filter>ヘッダー ファイル\Object\EnemyBullet\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\PlayerBullet\CNormalPlayerBullet.h">
+      <Filter>ヘッダー ファイル\Object\PlayerBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\PlayerBullet\Factory\CNormalPlayerBulletFactory.h">
+      <Filter>ヘッダー ファイル\Object\PlayerBullet\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\PlayerBullet\Weapon\CNWayPlayerWeapon.h">
+      <Filter>ヘッダー ファイル\Object\Player\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Player\CPlayer.h">
+      <Filter>ヘッダー ファイル\Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Move\CPlayerMove.h">
+      <Filter>ヘッダー ファイル\Object\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="System\CParameter.h">
       <Filter>ヘッダー ファイル\System</Filter>
     </ClInclude>
-    <ClInclude Include="CBossHP.h">
+    <ClInclude Include="System\CRandom.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Boss\CDisplayBoss.h">
       <Filter>ヘッダー ファイル\Object\Enemy\Boss</Filter>
     </ClInclude>
-    <ClInclude Include="CDisplayBoss.h">
-      <Filter>ヘッダー ファイル\Object\Enemy\Boss</Filter>
+    <ClInclude Include="Game\Object\CObjectManager.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
     </ClInclude>
-    <ClInclude Include="CNormalBoss.h">
-      <Filter>ヘッダー ファイル\Object\Enemy\Boss</Filter>
+    <ClInclude Include="Game\Object\EnemyBullet\Weapon\CRandomEnemyWeapon.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Weapon</Filter>
     </ClInclude>
-    <ClInclude Include="CBaseBoss.h">
-      <Filter>ヘッダー ファイル\Object\Enemy\Boss</Filter>
-    </ClInclude>
-    <ClInclude Include="CHowToPlayScene.h">
+    <ClInclude Include="Scene\CPlayScene.h">
       <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Move\CRandomFlyMove.h">
+      <Filter>ヘッダー ファイル\Object\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CTitleScene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Move\CStraightMove.h">
+      <Filter>ヘッダー ファイル\Object\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Shape\CRect.h">
+      <Filter>ヘッダー ファイル\Object\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\OutOfScreen\CRestrictOutOfScreen.h">
+      <Filter>ヘッダー ファイル\Object\OutOfScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Move\CReflectMove.h">
+      <Filter>ヘッダー ファイル\Object\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="System\CSceneImage.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\CSingleton.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CSceneManager.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CStageSelectScene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\Boss\Behavior\CSquare1BossBehavior.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\PlayerBullet\Weapon\CSpreadEnemyWeapon.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\eScene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="System\eKey.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\extern.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\HP\CBaseHP.h">
+      <Filter>ヘッダー ファイル\Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\HP\CBossHP.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Object\HP\CNormalHP.h">
+      <Filter>ヘッダー ファイル\Object\Enemy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

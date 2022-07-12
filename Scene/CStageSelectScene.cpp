@@ -62,7 +62,7 @@ void CStageSelectScene::render() {
 		DrawGraph(SCREEN_WIDTH / 2 + (i - currentStage) * 200 - 60, SCREEN_HEIGHT / 2 - 120 - 50, CSceneImage::getInstance()->getStageIcon(i), TRUE);
 	}
 
-	DrawGraph(pX, 120 + 200, CImage::getInstance()->getPlayerImage(1), true);
+	DrawGraph(int(pX), 120 + 200, CImage::getInstance()->getPlayerImage(1), true);
 }
 
 CStageSelectScene::~CStageSelectScene()

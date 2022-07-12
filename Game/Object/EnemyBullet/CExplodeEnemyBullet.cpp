@@ -21,7 +21,7 @@ void CExplodeEnemyBullet::upDate() {
 }
 
 void CExplodeEnemyBullet::render() {
-	DrawGraph(x - width * 0.5, y - height * 0.5, CImage::getInstance()->getEnemyExplodeBulletImage(), true);
+	DrawGraph(int(x - width * 0.5), int(y - height * 0.5), CImage::getInstance()->getEnemyExplodeBulletImage(), true);
 }
 
 void CExplodeEnemyBullet::init() {
