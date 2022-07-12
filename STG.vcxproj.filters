@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene">
+      <UniqueIdentifier>{35ba9ccb-ddd5-47dd-8a2c-03a1f86d40ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Scene">
+      <UniqueIdentifier>{cf324060-c0d2-40e7-af09-eb390f924700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\System">
+      <UniqueIdentifier>{5a6e52c2-5509-4875-8312-09825150fa19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\System">
+      <UniqueIdentifier>{c62bba2d-3e4e-472f-a4e1-dff968efdba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object">
+      <UniqueIdentifier>{a21ba79c-049b-4f8f-b702-efe22745a1c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object">
+      <UniqueIdentifier>{56e16ca1-1c28-410f-8426-9384be3c463c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\Move">
+      <UniqueIdentifier>{95ff38b8-4cda-4d75-8094-c182193d5831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\Move">
+      <UniqueIdentifier>{836ff560-359b-487c-a002-dfb05d927b09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\PlayerBullet">
+      <UniqueIdentifier>{ddd48233-4297-40e6-9aee-b042e04404dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\PlayerBullet\Factory">
+      <UniqueIdentifier>{c9adbfda-0e96-44fd-aba1-5a391803e2cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\PlayerBullet">
+      <UniqueIdentifier>{ccf7768d-4283-4744-a85e-6bf7e34b477d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\PlayerBullet\Factory">
+      <UniqueIdentifier>{1cb57380-e0ff-4d9a-898d-76afc5a88d5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\Player">
+      <UniqueIdentifier>{6170dca5-e954-4853-b3be-e870b4959f34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\Player">
+      <UniqueIdentifier>{7d2eedc0-777c-4eba-b7a6-1defa4b2c279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\Player\Weapon">
+      <UniqueIdentifier>{38a2e885-2b4a-48b3-ad0f-39e3f6959cbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\Player\Weapon">
+      <UniqueIdentifier>{eba41f5f-cbe4-4dea-96f1-a8d839a425e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\OutOfScreen">
+      <UniqueIdentifier>{8154ad51-3b19-4ad6-b854-e366136a8519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\OutOfScreen">
+      <UniqueIdentifier>{1b2b7b2f-b22d-4fcf-9b9d-c628e2354a46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\Enemy">
+      <UniqueIdentifier>{5d2f092f-3605-4517-a59c-5686d11596c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\EnemyBullet">
+      <UniqueIdentifier>{55744e7c-6eb8-4084-9d21-234a73015db9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\EnemyBullet\Factory">
+      <UniqueIdentifier>{52253b5b-db69-4b11-a8f4-40472156d72c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\Enemy">
+      <UniqueIdentifier>{226c4838-6546-4218-8655-2abfbcaafc7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\EnemyBullet\Shot">
+      <UniqueIdentifier>{5e9c6ddf-7e3b-42df-b4bd-56724385fcad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\EnemyBullet">
+      <UniqueIdentifier>{2f88dc4b-ef53-42da-9097-d937122d0de6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\EnemyBullet\Factory">
+      <UniqueIdentifier>{d0349a20-4110-4c39-bd05-607a6d79406c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\EnemyBullet\Shot">
+      <UniqueIdentifier>{18401ced-8f87-4e32-a0fd-f029e533b50e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\Effect">
+      <UniqueIdentifier>{d732f2ac-2352-4aa6-be60-25cbc7740a0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\Enemy\Boss">
+      <UniqueIdentifier>{dde93b1e-cece-4253-ab68-241786b25984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\Enemy\Weapon">
+      <UniqueIdentifier>{ee751143-3127-468b-9cbf-201b4936f262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\Shape">
+      <UniqueIdentifier>{a6cabdc6-c751-472b-a8f9-8f25e53f9160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\Enemy\Small">
+      <UniqueIdentifier>{75782a7b-951b-4f86-9036-fd4f96260365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\Enemy\Small">
+      <UniqueIdentifier>{311d1893-20b5-40c5-8ded-9efdf8d59e5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\Enemy\Weapon">
+      <UniqueIdentifier>{8f7e3d87-a06d-4bc2-a096-13f4c92e0217}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\Shape">
+      <UniqueIdentifier>{6a281fe5-d7dc-4c6d-bc73-9cc2eab40aa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\Enemy\Boss">
+      <UniqueIdentifier>{eae3c081-9b82-43fb-a9d2-31380beef4f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\Effect">
+      <UniqueIdentifier>{d0cc9502-2a5b-45ec-b592-79d56be218ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\Enemy\Small\Factory">
+      <UniqueIdentifier>{33d03b19-aac6-4fe8-b7c1-797c73e362bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\Enemy\Small\Factory">
+      <UniqueIdentifier>{7f6594af-9ee9-48af-8c4c-42ca3d80a0be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\Enemy\Boss\Behavior">
+      <UniqueIdentifier>{139b0665-f670-4aa3-91b2-334f0c964d56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object\Enemy\Boss\Behavior">
+      <UniqueIdentifier>{b866db33-0e3c-4e83-9a20-51703e143697}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseScene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayScene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneManager.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CImage.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CKeyFacade.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CParameter.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CSingleton.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CTitleScene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseObject.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseMove.cpp">
+      <Filter>ソース ファイル\Object\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayerMove.cpp">
+      <Filter>ソース ファイル\Object\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="CBasePlayerBullet.cpp">
+      <Filter>ソース ファイル\Object\PlayerBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="CNormalPlayerBullet.cpp">
+      <Filter>ソース ファイル\Object\PlayerBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="CBasePlayerBulletFactory.cpp">
+      <Filter>ソース ファイル\Object\PlayerBullet\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="CNormalPlayerBulletFactory.cpp">
+      <Filter>ソース ファイル\Object\PlayerBullet\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="CStraightMove.cpp">
+      <Filter>ソース ファイル\Object\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjectManager.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayer.cpp">
+      <Filter>ソース ファイル\Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CBasePlayerWeapon.cpp">
+      <Filter>ソース ファイル\Object\Player\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="CNWayPlayerWeapon.cpp">
+      <Filter>ソース ファイル\Object\Player\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseOutOfScreen.cpp">
+      <Filter>ソース ファイル\Object\OutOfScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="CDeleteOutOfScreen.cpp">
+      <Filter>ソース ファイル\Object\OutOfScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="CRestrictOutOfScreen.cpp">
+      <Filter>ソース ファイル\Object\OutOfScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="CRandomFlyMove.cpp">
+      <Filter>ソース ファイル\Object\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseEnemyBullet.cpp">
+      <Filter>ソース ファイル\Object\EnemyBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="CNormalEnemyBullet.cpp">
+      <Filter>ソース ファイル\Object\EnemyBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseEnemyBulletFactory.cpp">
+      <Filter>ソース ファイル\Object\EnemyBullet\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseEnemyShot.cpp">
+      <Filter>ソース ファイル\Object\EnemyBullet\Shot</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseEnemyWeapon.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="CCircleEnemyShot.cpp">
+      <Filter>ソース ファイル\Object\EnemyBullet\Shot</Filter>
+    </ClCompile>
+    <ClCompile Include="CNormalEnemyBulletFactory.cpp">
+      <Filter>ソース ファイル\Object\EnemyBullet\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="CCircleEnemyWeapon.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="CRandom.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CRandomEnemyWeapon.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="CSpreadEnemyWeapon.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseEffect.cpp">
+      <Filter>ソース ファイル\Object\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseEnemy.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Small</Filter>
+    </ClCompile>
+    <ClCompile Include="CCollision.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseShape.cpp">
+      <Filter>ソース ファイル\Object\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="CCircle.cpp">
+      <Filter>ソース ファイル\Object\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="CRect.cpp">
+      <Filter>ソース ファイル\Object\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseHP.cpp">
+      <Filter>ソース ファイル\Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="CNormalHP.cpp">
+      <Filter>ソース ファイル\Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="CNormalEffect.cpp">
+      <Filter>ソース ファイル\Object\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameManager.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseEnemyFactory.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Small\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="CEnemyGraphic.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Small</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossGraphic.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="CNormalEnemy.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Small</Filter>
+    </ClCompile>
+    <ClCompile Include="CGoToMove.cpp">
+      <Filter>ソース ファイル\Object\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="CDrawString.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CReflectMove.cpp">
+      <Filter>ソース ファイル\Object\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseBoss.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="CAppearanceMove.cpp">
+      <Filter>ソース ファイル\Object\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="CNormalBoss.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneImage.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossHP.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="CDisplayBoss.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="CExplodeEnemyBullet.cpp">
+      <Filter>ソース ファイル\Object\EnemyBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="CExplodeEnemyBulletFactory.cpp">
+      <Filter>ソース ファイル\Object\EnemyBullet\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="CHowToPlayScene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CStageSelectScene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CCircle1BossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="CCircle2BossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="CCircle3BossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="CCircle4BossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="CCircle5BossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="CGear1BossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="CHexagon1BossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="CSquare1BossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseBossBehavior.cpp">
+      <Filter>ソース ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CBaseScene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayScene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneManager.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CImage.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CKeyFacade.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CParameter.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CSingleton.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="eScene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="eKey.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CTitleScene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseObject.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="extern.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseMove.h">
+      <Filter>ヘッダー ファイル\Object\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayerMove.h">
+      <Filter>ヘッダー ファイル\Object\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="CBasePlayerBullet.h">
+      <Filter>ヘッダー ファイル\Object\PlayerBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CNormalPlayerBullet.h">
+      <Filter>ヘッダー ファイル\Object\PlayerBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CStraightMove.h">
+      <Filter>ヘッダー ファイル\Object\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjectManager.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CBasePlayerBulletFactory.h">
+      <Filter>ヘッダー ファイル\Object\PlayerBullet\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="CNormalPlayerBulletFactory.h">
+      <Filter>ヘッダー ファイル\Object\PlayerBullet\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayer.h">
+      <Filter>ヘッダー ファイル\Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="CBasePlayerWeapon.h">
+      <Filter>ヘッダー ファイル\Object\Player\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="CNWayPlayerWeapon.h">
+      <Filter>ヘッダー ファイル\Object\Player\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseOutOfScreen.h">
+      <Filter>ヘッダー ファイル\Object\OutOfScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="CDeleteOutOfScreen.h">
+      <Filter>ヘッダー ファイル\Object\OutOfScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="CRestrictOutOfScreen.h">
+      <Filter>ヘッダー ファイル\Object\OutOfScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseEnemyBullet.h">
+      <Filter>ヘッダー ファイル\Object\EnemyBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseEnemyBulletFactory.h">
+      <Filter>ヘッダー ファイル\Object\EnemyBullet\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="CNormalEnemyBulletFactory.h">
+      <Filter>ヘッダー ファイル\Object\EnemyBullet\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="CCircleEnemyWeapon.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseEnemyWeapon.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="CCircleEnemyShot.h">
+      <Filter>ヘッダー ファイル\Object\EnemyBullet\Shot</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseEnemyShot.h">
+      <Filter>ヘッダー ファイル\Object\EnemyBullet\Shot</Filter>
+    </ClInclude>
+    <ClInclude Include="CRandomFlyMove.h">
+      <Filter>ヘッダー ファイル\Object\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="CNormalEnemyBullet.h">
+      <Filter>ヘッダー ファイル\Object\EnemyBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CRandom.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CRandomEnemyWeapon.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="CSpreadEnemyWeapon.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseEnemy.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Small</Filter>
+    </ClInclude>
+    <ClInclude Include="CNormalEnemy.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Small</Filter>
+    </ClInclude>
+    <ClInclude Include="CCircle.h">
+      <Filter>ヘッダー ファイル\Object\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="CRect.h">
+      <Filter>ヘッダー ファイル\Object\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseShape.h">
+      <Filter>ヘッダー ファイル\Object\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseEffect.h">
+      <Filter>ヘッダー ファイル\Object\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="CNormalEffect.h">
+      <Filter>ヘッダー ファイル\Object\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="CCollision.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseHP.h">
+      <Filter>ヘッダー ファイル\Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="CNormalHP.h">
+      <Filter>ヘッダー ファイル\Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseEnemyFactory.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Small\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="CEnemyGraphic.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Small</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossGraphic.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="CGoToMove.h">
+      <Filter>ヘッダー ファイル\Object\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="CCircle1BossBehavior.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="CCircle2BossBehavior.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="CCircle3BossBehavior.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="CCircle4BossBehavior.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="CCircle5BossBehavior.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseBossBehavior.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="CHexagon1BossBehavior.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="CSquare1BossBehavior.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="CDrawString.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CAppearanceMove.h">
+      <Filter>ヘッダー ファイル\Object\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="CExplodeEnemyBulletFactory.h">
+      <Filter>ヘッダー ファイル\Object\EnemyBullet\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="CExplodeEnemyBullet.h">
+      <Filter>ヘッダー ファイル\Object\EnemyBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CGear1BossBehavior.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss\Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneImage.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CStageSelectScene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CReflectMove.h">
+      <Filter>ヘッダー ファイル\Object\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameManager.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossHP.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="CDisplayBoss.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="CNormalBoss.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseBoss.h">
+      <Filter>ヘッダー ファイル\Object\Enemy\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="CHowToPlayScene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
