@@ -10,7 +10,7 @@ CCircleEnemyGraphic::CCircleEnemyGraphic(){}
 CCircleEnemyGraphic::~CCircleEnemyGraphic() {}
 
 void CCircleEnemyGraphic::render(CBaseObject* o) {
-	DrawGraph(o->getX() - 32, o->getY() - 32, CImage::getInstance()->getCircleImage(), true);
+	DrawGraph(int(o->getX() - 32), int(o->getY() - 32), CImage::getInstance()->getCircleImage(), true);
 }
 
 
@@ -20,7 +20,7 @@ CGearEnemyGraphic::~CGearEnemyGraphic() {}
 
 void CGearEnemyGraphic::render(CBaseObject* o) {
 	this->angle += 0.05;
-	DrawRotaGraph(o->getX(), o->getY(), 1.0, cos(this->angle) * 3,CImage::getInstance()->getGearImage(),true);
+	DrawRotaGraph(int(o->getX()), int(o->getY()), 1.0, cos(this->angle) * 3,CImage::getInstance()->getGearImage(),true);
 }
 
 // Hexagon ===============
@@ -29,7 +29,7 @@ CHexagonEnemyGraphic::~CHexagonEnemyGraphic() {}
 
 void CHexagonEnemyGraphic::render(CBaseObject* o) {
 	this->angle += 0.08;
-	DrawRotaGraph(o->getX(), o->getY(), 1.0, this->angle, CImage::getInstance()->getHexagonImage(), true);
+	DrawRotaGraph(int(o->getX()), int(o->getY()), 1.0, this->angle, CImage::getInstance()->getHexagonImage(), true);
 }
 
 // Square ===============
@@ -39,5 +39,5 @@ CSquareEnemyGraphic::~CSquareEnemyGraphic() {}
 void CSquareEnemyGraphic::render(CBaseObject* o) {
 	this->angle += 0.05;
 
-	DrawRotaGraph(o->getX(), o->getY(), 1.0, cos(this->angle) * 3, CImage::getInstance()->getSquareImage(), true);
+	DrawRotaGraph(int(o->getX()), int(o->getY()), 1.0, cos(this->angle) * 3, CImage::getInstance()->getSquareImage(), true);
 }

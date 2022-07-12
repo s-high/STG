@@ -20,7 +20,7 @@ void CNormalEnemyBullet::upDate() {
 }
 
 void CNormalEnemyBullet::render() {
-	DrawGraph(x - width * 0.5, y - height * 0.5, CImage::getInstance()->getEnemyNormalBulletImage(),true);
+	DrawGraph(int(x - width * 0.5), int(y - height * 0.5), CImage::getInstance()->getEnemyNormalBulletImage(),true);
 }
 
 void CNormalEnemyBullet::init() {

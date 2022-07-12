@@ -17,7 +17,7 @@ void CNormalPlayerBullet::upDate(){
 }
 
 void CNormalPlayerBullet::render(){
-	DrawGraph(x - width * 0.5, y - height * 0.5,CImage::getInstance()->getPlayerNormalBulletImage(),true);
+	DrawGraph(int(x - width * 0.5), int(y - height * 0.5),CImage::getInstance()->getPlayerNormalBulletImage(),true);
 }
 
 void CNormalPlayerBullet::init() {

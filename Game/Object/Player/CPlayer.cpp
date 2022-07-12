@@ -24,7 +24,7 @@ void CPlayer::upDate() {
 }
 
 void CPlayer::render() {
-	DrawGraph(x - width * 0.5, y - height * 0.5,CImage::getInstance()->getPlayerImage(1),true);
+	DrawGraph(int(x - width * 0.5), int(y - height * 0.5),CImage::getInstance()->getPlayerImage(1),true);
 }
 
 void CPlayer::init() {

@@ -24,8 +24,8 @@ void CDrawString::drawString(const char* string, int x, int y, double rate) {
 
 void CDrawString::drawStringCorner(const char* string, int x, int y, double rate) {
 	int countNon = count(string, 'm') + count(string, 'w') - count(string,' ');
-	int len = (this->length(string) * ORIGINAL_SIZE + countNon * ORIGINAL_SIZE * 0.5) * rate;
-	drawString(string, x - len * 0.5, y - ORIGINAL_SIZE * rate * 0.5, rate);
+	int len = int((this->length(string) * ORIGINAL_SIZE + countNon * ORIGINAL_SIZE * 0.5) * rate);
+	drawString(string, int(x - len * 0.5), int(y - ORIGINAL_SIZE * rate * 0.5), rate);
 }
 
 int CDrawString::length(const char* string) {

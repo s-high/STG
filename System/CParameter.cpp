@@ -17,6 +17,7 @@ int CParameter::get(std::string key) {
 	catch (const std::exception& e) {
 		printfDx("CParameter::get(std::string)");
 		printfDx(" | No Such Key");
+		return -1;
 	}
 }
 

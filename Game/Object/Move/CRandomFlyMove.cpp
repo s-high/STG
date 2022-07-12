@@ -64,8 +64,8 @@ void CRandomFlyMove::setMoveTime(int t) {
 
 
 void CRandomFlyMove::moveInit(double x, double y) {
-	double nextX = GetRand(pRect->getWidth()) + pRect->getLeft();
-	double nextY = GetRand(pRect->getHeight()) + pRect->getTop();
+	double nextX = GetRand(int(pRect->getWidth())) + pRect->getLeft();
+	double nextY = GetRand(int(pRect->getHeight())) + pRect->getTop();
 
 	double angle = atan2(nextY - y, nextX - x);
 	double dist = sqrt((x - nextX) * (x - nextX) + (y - nextY) * (y - nextY));
