@@ -11,6 +11,7 @@ class CStageSelectScene :
 	int currentStage;
 	float pX, pVX;
 	int stageChangeAnimation;
+	int const PLAYER_SIZE = 32;
 public:
 	CStageSelectScene(CSceneManager*, CParameter&);
 	void upDate() override;

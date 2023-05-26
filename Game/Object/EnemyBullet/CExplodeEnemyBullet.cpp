@@ -6,9 +6,9 @@ CExplodeEnemyBullet::CExplodeEnemyBullet(double x, double y, std::shared_ptr<CBa
 {
 	this->life = life;
 	this->pShot = pShot;
-	width = 32;
-	height = 32;
-	this->hitShapeVector.push_back(std::make_shared<CCircle>(x, y, 16));
+	width = 16;
+	height = 16;
+	this->hitShapeVector.push_back(std::make_shared<CCircle>(x, y, width));
 }
 
 void CExplodeEnemyBullet::upDate() {

@@ -9,7 +9,7 @@ CNormalHP::CNormalHP(int hp) : CBaseHP(hp)
 
 
 void CNormalHP::render(double x, double y) {
-	DrawGraph(int(x - 32), int(y - 32), CImage::getInstance()->getNormalHPFrame(), true);
+	DrawGraph(int(x - this->SIZE * 0.5), int(y - this->SIZE * 0.5), CImage::getInstance()->getNormalHPFrame(), true);
 
 	double percent = this->getPercent();
 	int n = int(percent * 4 + 1);

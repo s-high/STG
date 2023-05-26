@@ -15,6 +15,7 @@ public:
 		ShotCircle = 0,
 		ShotSpread = 1,
 		ShotTurnCircle = 2,
+		NumWeapons = 3,
 	};
 private:
 	CRandomFlyMove::ePhase prevPhase;
@@ -22,6 +23,18 @@ private:
 	std::shared_ptr<CRandomFlyMove> pMove;
 
 	void setWeapon();
+
+	// ShotCircle
+	double SC_SPEED;
+	int SC_MAX_COOL_TIME,SC_N;
+
+	// ShotSpread
+	double SS_SPEED;
+	int SS_MAX_COOL_TIME, SS_N;
+
+	// ShotTurnCircle
+	double STC_SPEED,STC_INCREACE_ANGLE;
+	int STC_MAX_COOL_TIME, STC_N;
 public:
 	CCircle1BossBehavior();
 	void upDate(CBaseBoss*) override;

@@ -1,8 +1,7 @@
 #include "CObjectManager.h"
 
 
-CObjectManager::CObjectManager()
-{
+CObjectManager::CObjectManager() {
 }
 
 std::vector<std::shared_ptr<CBaseObject>> CObjectManager::getObject() const {
@@ -23,8 +22,7 @@ void CObjectManager::upDate() {
 		e->upDate();
 		if (e->getIsAlive()) {
 			nextObjectVector.push_back(e);
-		}
-		else {
+		} else {
 			e->finalize();
 		}
 	}
@@ -41,6 +39,5 @@ int CObjectManager::getSize() {
 	return this->objectVector.size();
 }
 
-CObjectManager::~CObjectManager()
-{
+CObjectManager::~CObjectManager() {
 }

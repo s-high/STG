@@ -15,7 +15,13 @@ class CCircle3BossBehavior :
 	int const SHOT_TIME_MAX = 180;
 	int const WAIT_TIME_MAX = 60;
 
-	std::vector<std::shared_ptr<CBaseEnemyWeapon>> pWeaponVector;
+	// weapon param
+	double speed;
+	int MAX_COOL_TIME;
+	int n;
+	double increaceAngle;
+
+	std::shared_ptr<CBaseEnemyWeapon> pWeapon;
 public:
 	CCircle3BossBehavior();
 	void upDate(CBaseBoss*) override;

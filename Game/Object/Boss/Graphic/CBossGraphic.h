@@ -5,6 +5,8 @@
 class CBaseBossGraphic
 {
 public:
+	int const SIZE = 128;
+public:
 	CBaseBossGraphic();
 	virtual void render(CBaseObject*) = 0;
 	~CBaseBossGraphic();

@@ -4,12 +4,11 @@
 #include "CNormalEffect.h"
 #include "CGameManager.h"
 
-CPlayer::CPlayer(double x,double y) : CBaseObject(x,y)
-{
-	this->hitShapeVector.push_back(std::make_shared<CCircle>(x, y, 16));
-	width = 32;
-	height = 32;
-	this->pMove = std::make_shared<CPlayerMove>(5);
+CPlayer::CPlayer(double x, double y) : CBaseObject(x, y) {
+	this->hitShapeVector.push_back(std::make_shared<CCircle>(x, y, this->SIZE * this->COLLISION_CORRECTION));
+	width = this->SIZE;
+	height = this->SIZE;
+	this->pMove = std::make_shared<CPlayerMove>(this->PLAYER_SPEED);
 	this->pOutOfScreen = std::make_shared<CRestrictOutOfScreen>();
 }
 
@@ -24,11 +23,19 @@ void CPlayer::upDate() {
 }
 
 void CPlayer::render() {
-	DrawGraph(int(x - width * 0.5), int(y - height * 0.5),CImage::getInstance()->getPlayerImage(1),true);
+	int image = CImage::getInstance()->getPlayerImage(1);
+	bool left = CKeyFacade::getInstance()->getKey(eKey::eLeft);
+	bool right = CKeyFacade::getInstance()->getKey(eKey::eRight);
+
+	if (left && !right)image = CImage::getInstance()->getPlayerImage(0);
+	if (!left && right)image = CImage::getInstance()->getPlayerImage(2);
+
+
+	DrawGraph(int(x - width * 0.5), int(y - height * 0.5), image, true);
 }
 
 void CPlayer::init() {
-	
+
 }
 
 void CPlayer::setMove(std::shared_ptr<CBaseMove> pMove) {
@@ -61,10 +68,9 @@ void CPlayer::hitObject(CBaseEnemyBullet* eb) {
 }
 
 void CPlayer::deadProcess() {
-	CNormalEffect::addExplode(CGameManager::pEffectManager, x, y, 10);
+	CNormalEffect::addExplode(CGameManager::pEffectManager, x, y, this->DEAD_EFFECT_LIFE);
 	this->isAlive = false;
 }
 
-CPlayer::~CPlayer()
-{
+CPlayer::~CPlayer() {
 }

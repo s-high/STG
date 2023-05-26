@@ -6,6 +6,7 @@
 class CNormalPlayerBullet : public CBasePlayerBullet
 {
 	std::shared_ptr<CBaseOutOfScreen> pOutScreen;
+	int const SIZE = 8;
 public:
 	CNormalPlayerBullet(double, double, std::shared_ptr<CBaseMove>, int);
 	void upDate() override;

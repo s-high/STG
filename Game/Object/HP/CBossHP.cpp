@@ -7,7 +7,7 @@ CBossHP::CBossHP(int hp) : CBaseHP(hp)
 }
 
 void CBossHP::render(double x, double y) {
-	DrawGraph(int(x - 48), int(y - 48), CImage::getInstance()->getBossHPFrame(), true);
+	DrawGraph(int(x - this->SIZE * 0.5), int(y - this->SIZE * 0.5), CImage::getInstance()->getBossHPFrame(), true);
 
 	double percent = this->getPercent();
 	int n = int(percent * 8 + 1);

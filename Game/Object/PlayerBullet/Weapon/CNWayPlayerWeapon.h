@@ -6,8 +6,7 @@
 #include "CStraightMove.h"
 
 class CNWayPlayerWeapon :
-	public CBasePlayerWeapon
-{
+	public CBasePlayerWeapon {
 	const int MAX_COOL_TIME = 10;
 	const double START_ANGLE = M_PI * 0.4;
 	const double SPEED = 5;
@@ -17,7 +16,7 @@ class CNWayPlayerWeapon :
 	std::shared_ptr<CBasePlayerBulletFactory> pPBFtr;
 
 public:
-	CNWayPlayerWeapon(std::shared_ptr<CObjectManager> pPBMgr, std::shared_ptr<CBasePlayerBulletFactory>,int);
+	CNWayPlayerWeapon(std::shared_ptr<CObjectManager> pPBMgr, std::shared_ptr<CBasePlayerBulletFactory>, int);
 	void attack(CBaseObject*);
 	~CNWayPlayerWeapon();
 };

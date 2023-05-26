@@ -7,7 +7,7 @@ CNormalEnemyBullet::CNormalEnemyBullet(double x, double y, std::shared_ptr<CBase
 	
 	width = 8;
 	height = 8;
-	this->hitShapeVector.push_back(std::make_shared<CCircle>(x, y, 8));
+	this->hitShapeVector.push_back(std::make_shared<CCircle>(x, y, width));
 	this->pOutOfScreen = std::make_shared<CDeleteOutOfScreen>();
 }
 

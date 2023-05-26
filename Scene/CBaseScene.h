@@ -48,7 +48,7 @@ class CBaseScene
 			this->color = GetColor(200, 200, CRandom::getInstance()->getRandom(0, 255));
 		}
 	};
-	
+	int const NUM_STAR = 50;
 	std::vector<std::shared_ptr<CStar>> starVector;
 protected:
 	CSceneManager* pSceneManager;

@@ -4,9 +4,9 @@
 
 CNormalPlayerBullet::CNormalPlayerBullet(double x, double y, std::shared_ptr<CBaseMove> pMove, int damage) : CBasePlayerBullet(x,y,pMove,damage)
 {
-	this->width = 8;
-	this->height = 8;
-	this->hitShapeVector.push_back(std::make_shared<CCircle>(x,y,8));
+	this->width = this->SIZE;
+	this->height = this->SIZE;
+	this->hitShapeVector.push_back(std::make_shared<CCircle>(x,y, this->SIZE));
 	this->pOutScreen = std::make_shared<CDeleteOutOfScreen>();
 }
 

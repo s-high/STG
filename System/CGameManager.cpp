@@ -13,8 +13,12 @@
 CGameManager::CGameManager(CSceneManager* pScnMgr,int stage,int way)
 {
 	this->pScnMgr = pScnMgr;
-	init();
+	this->init();
 	
+	// TODO:
+	//  refactoring 
+
+	// create boss
 	switch (stage)
 	{
 	case 1:
@@ -38,15 +42,12 @@ CGameManager::CGameManager(CSceneManager* pScnMgr,int stage,int way)
 	case 7:
 		pBossManager->addObject(std::make_shared<CNormalBoss>(480 * 0.5, 800, std::make_shared<CCircle2BossBehavior>(), std::make_shared<CCircleBossGraphic>()));
 		pBossManager->addObject(std::make_shared<CNormalBoss>(480 * 1.5, 800, std::make_shared<CCircle2BossBehavior>(), std::make_shared<CCircleBossGraphic>()));
-		//pBossManager->addObject(std::make_shared<CNormalBoss>(480, 800, std::make_shared<CCircle3BossBehavior>(), std::make_shared<CCircleBossGraphic>()));
 		break;
 	case 8:
 		pBossManager->addObject(std::make_shared<CNormalBoss>(480, 800, std::make_shared<CHexagon1BossBehavior>(), std::make_shared<CHexagonBossGraphic>()));
-		//pBossManager->addObject(std::make_shared<CNormalBoss>(480, 800, std::make_shared<CCircle3BossBehavior>(), std::make_shared<CCircleBossGraphic>()));
 		break;
 	case 9:
 		pBossManager->addObject(std::make_shared<CNormalBoss>(480, 1200, std::make_shared<CCircle5BossBehavior>(), std::make_shared<CCircleBossGraphic>()));
-		//pBossManager->addObject(std::make_shared<CNormalBoss>(480, 800, std::make_shared<CCircle3BossBehavior>(), std::make_shared<CCircleBossGraphic>()));
 		break;
 	case 10:
 		pBossManager->addObject(std::make_shared<CNormalBoss>(240, 800, std::make_shared<CCircle3BossBehavior>(), std::make_shared<CCircleBossGraphic>()));
@@ -60,7 +61,7 @@ CGameManager::CGameManager(CSceneManager* pScnMgr,int stage,int way)
 	// create
 	this->pPlayer->setWeapon(std::make_shared<CNWayPlayerWeapon>(pPlayerBulletMananger,std::make_shared<CNormalPlayerBulletFactory>(),way));
 
-	//Collision
+	// collision
 	pCollision = std::make_shared<CCollision>(pPlayer, this->pPlayerBulletMananger, this->pEnemyManager, this->pEnemyBulletManager,this->pBossManager);
 }
 
@@ -75,6 +76,7 @@ void CGameManager::upDate() {
 	switch (this->currentPhase)
 	{
 	case ePhase::Playing:
+		// update
 		CGameManager::pPlayerBulletMananger->upDate();
 		CGameManager::pEnemyBulletManager->upDate();
 		CGameManager::pEnemyManager->upDate();
@@ -83,30 +85,37 @@ void CGameManager::upDate() {
 		CGameManager::pCollision->upDate();
 		CGameManager::pEffectManager->upDate();
 
+		// gameover IF player dead
 		if (!pPlayer->getIsAlive())this->currentPhase = ePhase::GameOver;
+
+		// clear IF defeated boss
 		if (pBossManager->getSize() == 0)this->currentPhase = ePhase::Clear;
 
 		break;
 	case ePhase::Clear:
-		pPlayerBulletMananger->upDate();
-		pEnemyBulletManager->upDate();
-		pEnemyManager->upDate();
-		pBossManager->upDate();
-		pPlayer->upDate();
-		// pCollision->upDate();
-		pEffectManager->upDate();
+		CGameManager::pPlayerBulletMananger->upDate();
+		CGameManager::pEnemyBulletManager->upDate();
+		CGameManager::pEnemyManager->upDate();
+		CGameManager::pBossManager->upDate();
+		CGameManager::pPlayer->upDate();
+		// dont update collision
+		// CGameManager::pCollision->upDate();
+		CGameManager::pEffectManager->upDate();
 
+		// change scene IF pressed space
 		if (CKeyFacade::getInstance()->getMomentKey(eKey::eSpace))this->pScnMgr->popScene();
 		break;
 	case ePhase::GameOver:
-		pPlayerBulletMananger->upDate();
-		pEnemyBulletManager->upDate();
-		pEnemyManager->upDate();
-		pBossManager->upDate();
-		// pPlayer->upDate();
-		// pCollision->upDate();
-		pEffectManager->upDate();
+		CGameManager::pPlayerBulletMananger->upDate();
+		CGameManager::pEnemyBulletManager->upDate();
+		CGameManager::pEnemyManager->upDate();
+		CGameManager::pBossManager->upDate();
+		// dont update player and collision 
+		// CGameManager::pPlayer->upDate();
+		// CGameManager::pCollision->upDate();
+		CGameManager::pEffectManager->upDate();
 
+		// change scene IF pressed space
 		if (CKeyFacade::getInstance()->getMomentKey(eKey::eSpace))this->pScnMgr->popScene();
 		break;
 	default:
@@ -141,6 +150,7 @@ void CGameManager::render() {
 		pEnemyBulletManager->render();
 		pEnemyManager->render();
 		pBossManager->render();
+		// dont render player
 		// pPlayer->render();
 		pEffectManager->render();
 

@@ -12,17 +12,14 @@ class CGear1BossBehavior :
 	};
 	ePhase currentPhase;
 	int elapsedTime;
-	int const RANDOM_MOVE_MAX = 120;
-	int const GTM_START_TIME = 60;
-	int const GTM_SPAWN_TIME = 200;
-	int const GTM_BACK_TIME = 60;
+	int moveTime;
 
-	std::shared_ptr<CBaseMove> pMove;
+	std::shared_ptr<CRandomFlyMove> pRFM;
 	std::shared_ptr<CBaseEnemyWeapon> pWeapon;
 public:
 	CGear1BossBehavior();
 	void upDate(CBaseBoss*) override;
-	void setPhase(CBaseBoss*);
+	void setMove();
 	~CGear1BossBehavior();
 };
 

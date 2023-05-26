@@ -11,6 +11,7 @@ class CNormalBoss :
 	std::shared_ptr<CBaseBossGraphic> pGraphic;
 	std::shared_ptr<CBaseBossBehavior> pBehavior;
 	std::shared_ptr<CAppearanceMove> pAMove;
+	int const SIZE = 128;
 public:
 	CNormalBoss(double, int, std::shared_ptr<CBaseBossBehavior>,std::shared_ptr<CBaseBossGraphic>);
 	void upDate() override;

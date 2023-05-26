@@ -4,15 +4,16 @@
 
 CNormalBoss::CNormalBoss(double x, int hp, std::shared_ptr<CBaseBossBehavior> pBehavior, std::shared_ptr<CBaseBossGraphic> pGraphic) : CBaseBoss(x,-200,hp)
 {
-	this->width = 128;
-	this->height = 128;
+	this->width = this->SIZE;
+	this->height = this->SIZE;
 	this->pGraphic = pGraphic;
 	this->pBehavior = pBehavior;
 	this->pAMove = std::make_shared<CAppearanceMove>(150,0,2);
-	this->hitShapeVector.push_back(std::make_shared<CCircle>(x, y, 128));
+	this->hitShapeVector.push_back(std::make_shared<CCircle>(x, y, this->SIZE));
 }
 
 void CNormalBoss::upDate(){
+	// appearing...
 	if (this->pAMove->getIsAppearing()) this->pAMove->move(this);
 	else this->pBehavior->upDate(this);
 	
@@ -33,6 +34,7 @@ void CNormalBoss::finalize() {
 }
 
 void CNormalBoss::hitObject(CBasePlayerBullet* pb) {
+	// damage (not appearing)
 	if (!this->pAMove->getIsAppearing()) {
 		this->pHP->addDamage(pb->getDamage());
 		if (pHP->getHP() <= 0)this->isAlive = false;

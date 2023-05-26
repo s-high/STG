@@ -12,7 +12,8 @@ void CBaseBoss::dispatch(std::shared_ptr<CBaseObject> o) {
 }
 
 void CBaseBoss::hitObject(CBasePlayerBullet* pb) {
-
+	// damage
+	// (default process)
 	this->pHP->addDamage(pb->getDamage());
 	if (this->pHP->getHP() <= 0)this->isAlive = false;
 }

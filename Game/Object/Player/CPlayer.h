@@ -16,6 +16,11 @@ class CPlayer :
 	std::shared_ptr<CBaseMove> pMove;
 	std::shared_ptr<CBaseOutOfScreen> pOutOfScreen;
 	std::shared_ptr<CBasePlayerWeapon> pWeapon;
+	// param
+	int const SIZE = 32;
+	double const COLLISION_CORRECTION = 0.5;
+	double const PLAYER_SPEED = 5;
+	int const DEAD_EFFECT_LIFE = 10;
 public:
 	CPlayer(double,double);
 	void upDate();

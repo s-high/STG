@@ -4,7 +4,11 @@
 
 CCircle5BossBehavior::CCircle5BossBehavior()
 {
-	this->pRFMove = std::make_shared<CRandomFlyMove>(120, 240);
+	// move
+	int const MOVE_TIME = 120;
+	int const INTERVAL_TIME = 240;
+	this->pRFMove = std::make_shared<CRandomFlyMove>(MOVE_TIME, INTERVAL_TIME);
+
 	this->moveWeaponVector.push_back(std::make_shared<CSpreadEnemyWeapon>(std::make_shared<CNormalEnemyBulletFactory>(), 5, 0.4, 8, 1));
 	this->waitWeaponVector.push_back(std::make_shared<CCircleEnemyWeapon>(std::make_shared<CNormalEnemyBulletFactory>(), 5, 2, 18, 0.01));
 
@@ -28,12 +32,15 @@ void CCircle5BossBehavior::upDate(CBaseBoss* o) {
 		break;
 	}
 	if (!this->prevChangeFlag && this->changeFlag) {
+		// clear
 		this->moveWeaponVector.clear();
 		this->waitWeaponVector.clear();
 
+		// wait
 		this->waitWeaponVector.push_back(std::make_shared<CCircleEnemyWeapon>(std::make_shared<CNormalEnemyBulletFactory>(), 5, 2, 16, 0));
 		this->waitWeaponVector.push_back(std::make_shared<CSpreadEnemyWeapon>(std::make_shared<CNormalEnemyBulletFactory>(), 5, 0.4, 3, 1));
 
+		// move
 		this->moveWeaponVector.push_back(std::make_shared<CSpreadEnemyWeapon>(std::make_shared<CNormalEnemyBulletFactory>(), 5, 0.4, 8, 1));
 	}
 	this->prevChangeFlag = this->changeFlag;

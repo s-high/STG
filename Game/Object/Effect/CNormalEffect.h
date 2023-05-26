@@ -10,6 +10,7 @@ class CNormalEffect :
 	public CBaseEffect
 {
 	std::shared_ptr<CStraightMove> pMove;
+	int const SIZE = 64;
 public:
 	static double getSpeed();
 	CNormalEffect(double,double,int,double,double);

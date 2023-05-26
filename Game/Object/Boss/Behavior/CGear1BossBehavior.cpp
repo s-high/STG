@@ -9,65 +9,38 @@
 CGear1BossBehavior::CGear1BossBehavior()
 {
 	this->currentPhase = ePhase::RandomMove;
-	this->pWeapon = std::make_shared<CRandomEnemyWeapon>(std::make_shared<CNormalEnemyBulletFactory>(), 5, 4, 1);
-	this->pMove = std::make_shared<CRandomFlyMove>(30, 1);
-	this->elapsedTime = 0;
 
-	/*
-	this->pRFMove = std::make_shared<CRandomFlyMove>(30,0);
+	this->setMove();
 	
-	std::shared_ptr<CCircleEnemyShot> pShot = std::make_shared<CCircleEnemyShot>(std::make_shared<CNormalEnemyBulletFactory>(), 5, 8, 0);
-	std::shared_ptr<CExplodeEnemyBulletFactory> pFtr = std::make_shared<CExplodeEnemyBulletFactory>(40,pShot);
-	this->pWeapon = std::make_shared<CSpreadEnemyWeapon>(pFtr, 3, 0.05, 60 ,1);
-	*/
+	// weapon
+	double const SPEED = 5;
+	double const DIFFUSION = 0.8;
+	int const MAX_COOL_TIME = 8;
+	int const N = 1;
+	this->pWeapon = std::make_shared<CSpreadEnemyWeapon>(
+		std::make_shared<CNormalEnemyBulletFactory>(), 
+		SPEED, DIFFUSION, MAX_COOL_TIME, N
+		);
 }
 
 void CGear1BossBehavior::upDate(CBaseBoss* o) {
-	switch (this->currentPhase)
-	{
-	case ePhase::RandomMove:
-		this->pWeapon->attack(o);
-		this->pMove->move(o);
-		if(this->RANDOM_MOVE_MAX <= this->elapsedTime){
-			this->currentPhase = ePhase::GoToMove;
-			this->elapsedTime = 0;
-		}
-		break;
-	case ePhase::GoToMove:
-		this->pWeapon->attack(o);
-		this->pMove->move(o);
-		if (this->elapsedTime <= GTM_START_TIME) {
-			if (this->elapsedTime == GTM_START_TIME) {
-				this->pMove = std::make_shared<CGoToMove>(o, SCREEN_WIDTH - 100, 100, int(GTM_SPAWN_TIME));
-			}
-		}
-		else if (this->elapsedTime <= GTM_START_TIME + GTM_SPAWN_TIME) {
-			if (this->elapsedTime == GTM_START_TIME + GTM_SPAWN_TIME) {
-				this->pMove = std::make_shared<CGoToMove>(o, SCREEN_WIDTH * 0.5, 250, int(GTM_BACK_TIME));
-			}
-		}
-		else {
-			if (this->elapsedTime == GTM_START_TIME + GTM_SPAWN_TIME + GTM_BACK_TIME) {
-				setPhase(o);
-			}
-		}
-		break;
+	this->pWeapon->attack(o);
+	this->pRFM->move(o);
+
+	if (this->pRFM->getPhase() == CRandomFlyMove::ePhase::Waiting) {
+		this->setMove();
 	}
 	this->elapsedTime += 1;
 }
 
-void CGear1BossBehavior::setPhase(CBaseBoss* o) {
+void CGear1BossBehavior::setMove() {
 	this->elapsedTime = 0;
-	if (CRandom::getInstance()->getRandom() < 0.7) {
-		this->currentPhase = ePhase::GoToMove;
-		this->pMove = std::make_shared<CGoToMove>(o, 100, 100, int(GTM_START_TIME));
-		this->pWeapon = std::make_shared<CSpreadEnemyWeapon>(std::make_shared<CNormalEnemyBulletFactory>(), 5, 0.2, 7, 1);
-	}
-	else {
-		this->currentPhase = ePhase::RandomMove;
-		this->pWeapon = std::make_shared<CRandomEnemyWeapon>(std::make_shared<CNormalEnemyBulletFactory>(), 5, 4, 1);
-		this->pMove = std::make_shared<CRandomFlyMove>(30, 1);
-	}
+
+	int const RANDOM_MAX = 60;
+	int const RANDOM_MIN = 45;
+	int const INTERVAL = 1;
+	this->moveTime = CRandom::getInstance()->getRandom(RANDOM_MAX, RANDOM_MIN);
+	this->pRFM = std::make_shared<CRandomFlyMove>(this->moveTime, INTERVAL);
 }
 
 CGear1BossBehavior::~CGear1BossBehavior()

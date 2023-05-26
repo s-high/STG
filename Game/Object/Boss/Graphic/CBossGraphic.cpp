@@ -10,7 +10,7 @@ CCircleBossGraphic::CCircleBossGraphic(){}
 CCircleBossGraphic::~CCircleBossGraphic() {}
 
 void CCircleBossGraphic::render(CBaseObject* o) {
-	DrawGraph(int(o->getX() - 64), int(o->getY() - 64), CImage::getInstance()->getBossCircleImage(), true);
+	DrawGraph(int(o->getX() - this->SIZE * 0.5), int(o->getY() - this->SIZE * 0.5), CImage::getInstance()->getBossCircleImage(), true);
 }
 
 // Square =====================

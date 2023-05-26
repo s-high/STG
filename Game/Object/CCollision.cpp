@@ -3,8 +3,8 @@
 
 
 CCollision::CCollision(std::shared_ptr<CPlayer> pPlayer, std::shared_ptr<CObjectManager> pPBMgr
-	, std::shared_ptr<CObjectManager> pEMgr, std::shared_ptr<CObjectManager> pEBMgr, std::shared_ptr<CObjectManager> pBMgr)
-{
+					   , std::shared_ptr<CObjectManager> pEMgr, std::shared_ptr<CObjectManager> pEBMgr, std::shared_ptr<CObjectManager> pBMgr) {
+	// player,pBullet,enemy,eBullet,Boss
 	this->pPlayer = pPlayer;
 	this->pPBMgr = pPBMgr;
 	this->pEMgr = pEMgr;
@@ -14,7 +14,7 @@ CCollision::CCollision(std::shared_ptr<CPlayer> pPlayer, std::shared_ptr<CObject
 
 bool CCollision::isHitObjectAndObject(std::shared_ptr<CBaseObject> o1, std::shared_ptr<CBaseObject> o2) {
 	for (auto s1 : o1->getHitShape())for (auto s2 : o2->getHitShape()) {
-		if (s1->dispatch(s2)){
+		if (s1->dispatch(s2)) {
 			return true;
 		}
 	}
@@ -22,7 +22,7 @@ bool CCollision::isHitObjectAndObject(std::shared_ptr<CBaseObject> o1, std::shar
 }
 
 void CCollision::checkObjectAndObject(std::vector<std::shared_ptr<CBaseObject>> ov1, std::vector<std::shared_ptr<CBaseObject>> ov2) {
-	for (auto o1 : ov1){
+	for (auto o1 : ov1) {
 		checkObjectAndObject(o1, ov2);
 	}
 }
@@ -45,6 +45,5 @@ void CCollision::upDate() {
 	checkObjectAndObject(this->pBMgr->getObject(), this->pPBMgr->getObject());
 }
 
-CCollision::~CCollision()
-{
+CCollision::~CCollision() {
 }

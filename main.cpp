@@ -4,11 +4,10 @@
 
 // WinMain
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
-	LPSTR lpCmdLine, int nCmdShow)
-{
+				   LPSTR lpCmdLine, int nCmdShow) {
 	// screen init
 	SetGraphMode(960, 640, 16);
-	ChangeWindowMode(TRUE);// window mode
+	ChangeWindowMode(TRUE);
 	SetMainWindowText("SPACE SHOOTING");
 	SetUseDisplayIndex(2);
 
@@ -17,25 +16,22 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 
 	CSceneManager ISceneManager = CSceneManager();
 
-	
 	SetDrawScreen(DX_SCREEN_BACK);
 
+	int const FRAME_PER_SECOND = 60;
+
 	// loop
-	while (1)
-	{
+	while (1) {
 		// init
 		ClearDrawScreen();
 		SetBackgroundColor(255, 255, 255);
-		
 
-		// Here your code!! =================
 
+		// code =================
 		CKeyFacade::getInstance()->upDate();
 		ISceneManager.doScene();
-		Sleep(17);
-
+		Sleep(int(1000 / FRAME_PER_SECOND));
 		// End ==============================
-		
 
 		// end
 		ScreenFlip();

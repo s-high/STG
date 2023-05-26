@@ -4,15 +4,14 @@
 #include "CNormalEffect.h"
 
 CNormalEnemy::CNormalEnemy(double x, double y, int hp, std::shared_ptr<CBaseEnemyGraphic> pGraphic
-	, std::shared_ptr<CBaseEnemyWeapon> pWeapon, std::shared_ptr<CBaseMove> pMove) : CBaseEnemy(x, y, hp)
-{
+						   , std::shared_ptr<CBaseEnemyWeapon> pWeapon, std::shared_ptr<CBaseMove> pMove) : CBaseEnemy(x, y, hp) {
 	this->pGraphic = pGraphic;
 	this->pWeapon = pWeapon;
 	this->pMove = pMove;
 	width = 64;
 	height = 64;
 
-	this->hitShapeVector.push_back(std::make_shared<CCircle>(x,y,64));
+	this->hitShapeVector.push_back(std::make_shared<CCircle>(x, y, 64));
 }
 
 void CNormalEnemy::upDate() {
@@ -25,6 +24,7 @@ void CNormalEnemy::upDate() {
 }
 
 void CNormalEnemy::render() {
+	// hp and enemy
 	this->pHP->render(this->x, this->y);
 	this->pGraphic->render(this);
 }
@@ -38,14 +38,15 @@ void CNormalEnemy::dispatch(std::shared_ptr<CBaseObject> o) {
 }
 
 void CNormalEnemy::hitObject(CBasePlayerBullet* pb) {
+	// damage
 	this->pHP->addDamage(pb->getDamage());
 }
 
 void CNormalEnemy::finalize() {
+	// make effect
 	CNormalEffect::addExplode(CGameManager::pEffectManager, x, y, 10);
 }
 
-CNormalEnemy::~CNormalEnemy()
-{
-		
+CNormalEnemy::~CNormalEnemy() {
+
 }

@@ -4,10 +4,30 @@
 
 CCircle4BossBehavior::CCircle4BossBehavior()
 {
-	this->pRFMove = std::make_shared<CRandomFlyMove>(60,30);
-	//this->pCircleWeapon = std::make_shared<CCircleEnemyWeapon>(std::make_shared<CNormalEnemyBulletFactory>(), 5, 2, 12, 0.2);
-	this->pCircleWeapon = std::make_shared<CCircleEnemyWeapon>(std::make_shared<CNormalEnemyBulletFactory>(), 5, 2, 12);
-	this->pSpreadWeapon = std::make_shared<CSpreadEnemyWeapon>(std::make_shared<CNormalEnemyBulletFactory>(), 5, 0.6, 8, 1);
+	// move
+	int const MOVE_TIME = 60;
+	int const INTERVAL_TIME = 30;
+	this->pRFMove = std::make_shared<CRandomFlyMove>(MOVE_TIME,INTERVAL_TIME);
+
+	// weapon
+	//  circle
+	double const C_SPEED = 5;
+	int const C_MAX_COOL_TIME = 2;
+	int const C_N = 12;
+	this->pCircleWeapon = std::make_shared<CCircleEnemyWeapon>(
+		std::make_shared<CNormalEnemyBulletFactory>(), 
+		C_SPEED, C_MAX_COOL_TIME, C_N
+		);
+
+	//  spread
+	double const S_SPREAD = 5.;
+	double const S_DIFFUSION = 0.6;
+	int const S_MAX_COOL_TIME = 8;
+	int const S_N = 1;
+	this->pSpreadWeapon = std::make_shared<CSpreadEnemyWeapon>(
+		std::make_shared<CNormalEnemyBulletFactory>(),
+		S_SPREAD, S_DIFFUSION, S_MAX_COOL_TIME, S_N
+		);
 }
 
 void CCircle4BossBehavior::upDate(CBaseBoss* o) {

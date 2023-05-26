@@ -15,7 +15,10 @@ void CNormalEffect::upDate() {
 void CNormalEffect::render() {
 	double percent = double(this->life) / double(this->maxLife);
 	SetDrawBlendMode(DX_BLENDMODE_ALPHA, int(255 * (1 - percent)));
-	DrawExtendGraph(int(x - (64 * percent) * 0.5), int(y - (64 * percent) * 0.5), int(x + (64 * percent) * 0.5), int(y + (64 * percent) * 0.5), CImage::getInstance()->getNormalEffect(), true);
+	DrawExtendGraph(
+		int(x - (this->SIZE * percent) * 0.5), int(y - (this->SIZE * percent) * 0.5), 
+		int(x + (this->SIZE * percent) * 0.5), int(y + (this->SIZE * percent) * 0.5), CImage::getInstance()->getNormalEffect(), true
+	);
 	SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
 }
 
